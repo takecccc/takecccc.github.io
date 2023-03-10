@@ -29,7 +29,8 @@
 # 導入方法
 1. lilToon, Hermitちゃん, Modular Avatarのパッケージを先にインポート。
 2. tracksuit_Hermit.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。
+3. 衣装を着せる素体をHierarchyに配置。  
+   例: `Assets/Hermit/Hermit_1.00 (for dress-up).prefab`
 4. `Assets/Takec/Costume/tracksuit/prefab/tracksuit_Hermit_MA.prefab`を衣装を着せる素体の直下に配置。
 5. 調整
    - HermitちゃんのShoes, SocksはOffとすることを想定しています。TagをEditor Onlyに変更する等して非表示にしてください。
@@ -40,10 +41,10 @@
 規約は下記のリンクをご確認ください。
 
 【日本語】
-<https://drive.google.com/file/d/1sn_ckrJAhizcG61h0h_DtpTwR0qoSleO/view?usp=share_link>
+https://drive.google.com/file/d/1qngV7YStsM_SeoYIBj2hkApXEXYibhBh/view?usp=share_link
 
 【English】
-<https://drive.google.com/file/d/1kzETe42lmAKzATorDfaR9mKA2mizRhK6/view?usp=share_link>
+https://drive.google.com/file/d/1qoNiH-j2JXaAc2GTTYb3u85AAHro6cTF/view?usp=share_link
 
 ## その他
 製作者
