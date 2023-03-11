@@ -1,16 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-body {
-    background-color: #fff;
-    color: #000;
-}
-
 header {
     font-family: RodinNTLGPro-EB;
-    background-color: #000;
+    background-color: rgba(20,39,59,.8);
     .site-title, .site-title:visited{
         font-size: 1.3em;
         color: #fff;
@@ -38,8 +31,8 @@ header {
     }
     h2 {
         font-size: 1.2em;
-        border-left: solid 9px #77b5e6;
-        border-bottom: solid 2px #77b5e6;
+        border-left: solid 9px #56dbfb;
+        border-bottom: solid 2px #56dbfb;
         padding: 3px 1px 3px 7px;
     }
     h3 {
