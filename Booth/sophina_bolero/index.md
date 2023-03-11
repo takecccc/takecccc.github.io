@@ -1,4 +1,3 @@
-@import "style.less"
 # 【ソフィナ -Sophina- ちゃん対応】秋のボレロコーデ
 
 ## 概要
@@ -48,6 +47,7 @@
    <img src="img/2022-10-22-10-49-06.png">
 
 6. メニューバー > VRCAvatar3Tools > ExpressionParametersCombinerを起動。
+
 7. それぞれ次のように指定してCombine。
 
    SrcAnimatorController
@@ -81,11 +81,11 @@
 本衣装はVN3ライセンスにて公開しております。
 規約は下記のリンクをご確認ください。
 
-【日本語】
+【日本語】  
 https://drive.google.com/file/d/1R37TvmohZ9G7--HkU3bAWqKetMtgJXLg/view?usp=sharing
 
 
-【English】
+【English】  
 https://drive.google.com/file/d/1E-JUtvJ11f_POxfvCz5R41JR-iQE7AG8/view?usp=sharing
 
 ## その他
