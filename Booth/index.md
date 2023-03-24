@@ -29,6 +29,7 @@ github pages管理のBooth商品リスト
   - [emistia_swimsuit](emistia_swimsuit)
   - [emistia_tight_dress](emistia_tight_dress)
   - [emistia_towel](emistia_towel)
+  - [emistia_tracksuit](emistia_tracksuit)
   - [emistia_tunic](emistia_tunic)
   - [emistia_waistcoat](emistia_waistcoat)
   - [emistia_witch](emistia_witch)
