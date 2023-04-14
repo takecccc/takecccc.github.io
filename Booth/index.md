@@ -38,6 +38,7 @@ github pages管理のBooth商品リスト
 * リミリアちゃん対応
   - [limilia_bunny](limilia_bunny)
   - [limilia_tracksuit](limilia_tracksuit)
+  - [limilia_swimsuit](limilia_swimsuit)
 * ソフィナちゃん対応
   - [sophina_bolero](sophina_bolero)
 * ワールドギミック
