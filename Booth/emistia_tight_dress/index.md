@@ -10,9 +10,9 @@ title: 【エミスティアちゃん対応】 タイトドレス
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * マテリアルを6パターン同梱。
-  * lilToon使用 x5
+  * lilToon( https://github.com/lilxyzw/lilToon )使用 x5
   * Standard使用PBR x1
-* Modular Avatarを使用。
+* Modular Avatar( https://github.com/bdunderscore/modular-avatar/releases )を使用。
 
 ## 内容物
 * Unitypackageファイル
