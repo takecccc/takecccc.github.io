@@ -21,7 +21,7 @@ title: 【エミスティアちゃん対応】バスタオル
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRRChat SDK 3.1.13 
+* VRChat SDK 3.1.13 
 * エミスティアちゃん v1.2.4
 * lilToon v1.3.7
 * Modular Avatar 1.4.5
@@ -31,7 +31,7 @@ title: 【エミスティアちゃん対応】バスタオル
 2. EMISTIA_towel2.unitypackageをインポート。
 3. 衣装を着せたい素体をHierarchyに配置。  
    ex) エミスティアちゃんの素体prefab。  
-   `Assets/SKYMY_Workshop/03Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone`
+   `Assets/SKYMY_Workshop/03Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
 4. 衣装のプレファブをHierarchyに配置。
    `Assets/Takec/EMISTIA/model/towel2/Prefabs/EMISTIA_towel2_MA.prefab`
 5. 結合データの調整
