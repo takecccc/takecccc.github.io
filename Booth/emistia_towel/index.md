@@ -14,7 +14,6 @@ title: 【エミスティアちゃん対応】バスタオル
 * 衣装Unitypackageファイル
   * fbx
   * コンポーネント設定済み衣装prefab
-  * 衣装結合済みprefab
   * マテリアル
 * lilToon v1.3.7
 * 衣装テクスチャファイル(psd, png)
