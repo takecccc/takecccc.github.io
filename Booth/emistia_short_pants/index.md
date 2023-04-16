@@ -1,5 +1,7 @@
-# エミスティアちゃん対応 ショートパンツスタイル3Dモデル
-この度はAtelier Takecにてご購入いただき誠にありがとうございます。
+---
+title: 【エミスティアちゃん対応】 ショートパンツスタイル
+---
+# 【エミスティアちゃん対応】 ショートパンツスタイル
 
 ## 概要
 本アセットはSKYMY工房様のエミスティアちゃん( https://skymy.booth.pm/items/2992265 )に対応した
@@ -7,38 +9,37 @@
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * テクスチャを3パターン同梱。
-* ユニティちゃんトゥーンシェーダー2.0を使用。( https://unity-chan.com/download/releaseNote.php?id=UTS2_0 )
+* lilToon ( https://github.com/lilxyzw/lilToon )を使用。
+* Modular Avatar ( https://github.com/bdunderscore/modular-avatar/releases )を使用。
 
 ## 内容物
 - Unitypackageファイル
   - fbx
   - マテリアル
   - 着替えアニメーション、エクスプレッションメニュー
-  - エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み)
-    ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
-- テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
+- テクスチャファイル(psd, png)
 - モデルファイル(fbx)
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 2022.04.21.03.29
-* エミスティアちゃん v1.2.1
-* ユニティちゃんトゥーンシェーダー v2.0.7
+* VRChar SDK 3.1.13
+* エミスティアちゃん v1.2.4
+* lilToon v1.3.7
+* Modular Avatar 1.4.5
 
 ## 導入方法
-1. VRCSDKやEMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_short_pants.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんv1.2.1対応。
-   `Assets/Takec/EMISTIA/model/short_pants/EMISTIA_short_pants_for_v1.2.1.prefab`
-4. VRChat SDKのControlPanelからアップロード
-
-※自分の改変済みモデルに組み込みたい場合等はfbxファイルをご利用ください。
-
-`Assets/Takec/EMISTIA/model/short_pants/EMISTIA_short_pants.fbx`
-
-AbatarTools( https://takec.booth.pm/items/3411988 )のAvatarAssemblerでのアセンブルに対応しております。
+3. 衣装を着せたい素体をHierarchyに配置。  
+   ex) エミスティアちゃんの素体prefab。  
+   `Assets/SKYMY_Workshop/03Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. 衣装のプレファブをHierarchyに配置。
+   `Assets/Takec/EMISTIA/model/short_pants/Prefabs/EMISTIA_short_pants_MA.prefab`
+5. 結合データの調整
+   1. `Shoes`,`Tights`を非表示とし、Tagを`EditorOnly`に変更。
+   2. 素体の`Kemono`のBlendShapesでTail_cover_offを100に設定。
+   3. 衣装のSkinned Mesh RendererのProbesのAnchor Overrideに素体のAnchor Overrideを指定
+6. VRChat SDKのControlPanelからアップロード。
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
