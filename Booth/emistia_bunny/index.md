@@ -1,3 +1,7 @@
+---
+title: 【エミスティアちゃん対応】 バニースーツ
+---
+
 # 【エミスティアちゃん対応】バニースーツ
 
 ## 概要
@@ -5,50 +9,37 @@
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * lilToon ( https://github.com/lilxyzw/lilToon )を使用。
-* AvatarTools( https://takec.booth.pm/items/3411988 )を使用。
+* Modular Avatar ( https://github.com/bdunderscore/modular-avatar/releases )を使用。
 
 ## 内容物
 * 衣装Unitypackageファイル
   * fbx
   * コンポーネント設定済み衣装prefab
-  * 衣装結合済みprefab
   * マテリアル
-* lilToon v1.3.6
-* 衣装テクスチャファイル(clip, psd, png)
-  ※psdはclipstudioで保存したものです。
+* lilToon v1.3.7
+* 衣装テクスチャファイル(psd, png)
 * モデルファイル(fbx)
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 2022.07.26.21.45
-* エミスティアちゃん v1.2.3
-* lilToon v1.3.6
-* AvatarTools v2.2.3
+* VRCSDK 3.2.0
+* エミスティアちゃん v1.2.4
+* lilToon v1.3.7
+* Modular Avatar 1.4.5
 
 ## 導入方法
-1. VRCSDK, lilToon, エミスティアちゃん, AvatarToolsのパッケージを先にインポート。
-2. EMISTIA_bunny.unitypackageをインポート。
-3. ベースとなるモデルをHierarchyに配置。
-   ex) エミスティアちゃんの素体prefab。
+1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
+2. EMISTIA_bunny2.unitypackageをインポート。
+3. 衣装を着せたい素体をHierarchyに配置。  
+   ex) エミスティアちゃんの素体prefab。  
    `Assets/SKYMY_Workshop/03Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone`
-4. 衣装prefabをHierarchyに配置。
-   `Assets/Takec/EMISTIA/model/bunny/EMISTIA_bunny_prefab.prefab`
-5. AvatarToolsで衣装を結合
-   1. メニューからAvatarToolsのAvatarAssemblerを起動。
-   2. AvatarAssemblerの`BaseObject`にHierarchyからベースモデルを指定。
-   3. AvatarAssemblerの`CombineObjects`の`+`ボタンを押して枠を追加して、Hierarchyから衣装prefabを指定
-   4. `Assemble!`ボタンを押すと結合したオブジェクトがHierarchyに配置されます。
-6. 結合データの調整
-   1. `Shoes`,`Tights`,`Underwear`は非表示にするか削除する必要があります。
-   2. `Kemono`,`Necklace`はFXレイヤーで制御されます。
-   3. 結合した`bunny`のAnchor Overrideに`Anchor Target`を指定します。
-7. FX, ExMenu, ExParametersを`Assets/Takec/EMISTIA/model/bunny/ExMenu`に同梱したものに置き換え。
-   1. `VRC Avatar Descriptor > Playable Layers > Base > FX`に`EMISTIA_FX_bunny`を設定。
-   2. `VRC Avatar Descriptor > Expressions > Menu`に`EMISTIA_ExpMenu_bunny`を設定。
-   3. `VRC Avatar Descriptor > Expressions > Parameters`に`EMISTIA_ExParameters_bunny`を設定。
-8. VRChat SDKのControlPanelからアップロード。
-
-※アバターに結合済みのprefabも同梱していますが、将来のアップデートで使えなくなる可能性があります。ご了承ください。
+4. 衣装のプレファブをHierarchyに配置。
+   `Assets/Takec/EMISTIA/model/bunny2/prefab/EMISTIA_bunny2_MA.prefab`
+5. 結合データの調整
+   1. `Kemono`,`Necklace`,`Shoes`,`Tights`,`Underwear`を非表示とし、Tagを`EditorOnly`に変更。
+   2. 素体の`Body`のBlendShapesの`Knee_high`を100に変更
+   3. 衣装のSkinned Mesh RendererのProbesのAnchor Overrideに素体のAnchor Overrideを指定
+6. VRChat SDKのControlPanelからアップロード。
 
 ## 利用規約 Terms of Use
 本衣装はVN3ライセンスにて公開しております。
