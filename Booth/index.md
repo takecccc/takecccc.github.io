@@ -41,5 +41,7 @@ github pages管理のBooth商品リスト
   - [limilia_swimsuit](limilia_swimsuit)
 * ソフィナちゃん対応
   - [sophina_bolero](sophina_bolero)
+* Rufinaちゃん対応
+  - [rufina_bunny](rufina_bunny)
 * ワールドギミック
   - [light-shaft-projector](light-shaft-projector)
