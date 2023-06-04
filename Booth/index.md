@@ -24,6 +24,7 @@ github pages管理のBooth商品リスト
   - [emistia_miko](emistia_miko)
   - [emistia_miniskirt](emistia_miniskirt)
   - [emistia_pajamas](emistia_pajamas)
+  - [emistia_party_dress](emistia_party_dress)
   - [emistia_school_costume](emistia_school_costume)
   - [emistia_short_pants](emistia_short_pants)
   - [emistia_swimsuit](emistia_swimsuit)
