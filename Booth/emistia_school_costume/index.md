@@ -8,40 +8,40 @@ title: 【エミスティアちゃん対応】スクールセータースタイ�
 本アセットはSKYMY工房様のエミスティアちゃん( https://skymy.booth.pm/items/2992265 )に対応した衣装の3Dモデルです。
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
-* PhysBoneを使用。
-* 着替え実装済み。
-* lilToonを使用。
+* lilToon ( https://lilxyzw.github.io/lilToon/#/ )を使用。
+* Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )を使用。
 
 ## 内容物
-* Unitypackageファイル
+* 衣装Unitypackageファイル
   * fbx
+  * コンポーネント設定済み衣装prefab
   * マテリアル
-  * 着替えアニメーション、エクスプレッションメニュー
-  * エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み) ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
-* テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
+* 衣装テクスチャファイル(psd, png)
 * モデルファイル(fbx)
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 2022.05.04.17.47
-* エミスティアちゃん v1.2.2
-* lilToon v1.2.12
+* VRCSDK 3.2.1
+* [エミスティアちゃん v1.2.4](https://skymy.booth.pm/items/2992265)
+* [lilToon v1.4.0](https://lilxyzw.github.io/lilToon/#/)
+* [Modular Avatar 1.5.1](https://modular-avatar.nadena.dev/ja/)
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_school_costume.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんv1.2.2対応。
-   `Assets/Takec/EMISTIA/model/school_costume/EMISTIA_school_costume_for_v1.2.2.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+3. 衣装を着せたい素体をHierarchyに配置。  
+   ex) エミスティアちゃんの素体prefab。  
+   `Assets/SKYMY_Workshop/03Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone`
+4. 衣装のプレファブをHierarchyの素体直下に配置。
+   `Assets/Takec/EMISTIA/model/school_costume/prefab/EMISTIA_school_costume_MA.prefab`
+5. 素体データの調整
+   1. `Shoes`を非表示に設定してTagをEditorOnlyに変更。
+   2. `Necklace`を非表示に設定。
+   3. `Kemono`のBlendShapesの`Tail_cover_off`を100に設定。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合やprefabが動作しなくなった場合等はfbxファイルもしくはDB設定済みのprefabをご利用ください。
-
-`Assets/Takec/EMISTIA/model/school_costume/EMISTIA_school_costume.prefab`
-
-AbatarTools( https://takec.booth.pm/items/3411988 )のAvatarAssemblerでのアセンブルに対応しております。
+※改変用素体Prefabを元としたPrefab Variantも用意してあります。  
+`Assets/Takec/EMISTIA/model/school_costume/prefab/EMISTIA_school_costume_MA.prefab`
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
