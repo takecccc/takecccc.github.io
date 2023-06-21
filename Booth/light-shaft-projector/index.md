@@ -93,10 +93,10 @@ _CameraDepthTextureの内容を描画するシェーダーを作成しました�
 `Assets/LightShaftProjector/Debug/CameraDepthTextureTestPlane.prefab`をHierarchyに配置してください。
 
 プレーンを置く前
-<img src=".img/2023-03-11-21-04-58.png">
+<img src="img/2023-03-11-21-04-58.png">
 
 プレーンを置いた後
-<img src=".img/2023-03-11-21-03-49.png">
+<img src="img/2023-03-11-21-03-49.png">
 
 正常に_CameraDepthTextureが生成されていると、このように深度が表示されます。
 
