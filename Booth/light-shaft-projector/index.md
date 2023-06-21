@@ -2,7 +2,7 @@
 title: Light Shaft Projector
 ---
 
-# Light Shaft Projector
+# Light Shaft Projector v1.2.0
 ## 概要
 本アセットはVRChatのワールド作成で利用することを想定した、
 モデル・シェーダー・U#スクリプト を提供するものです。
@@ -12,19 +12,19 @@ https://vrchat.com/home/world/wrld_845135e5-3e62-4f81-a9cb-4786cc5e3dfd
 
 Unity2019対応。
 iwaSync3およびKineL式(りら式)VideoPlayerのスクリーンとしても用いることができます。
-* iwaSync3 https://hoshinolabs.booth.pm/items/2666275
-* KineL式 https://kinel.booth.pm/items/2758684
+* [iwaSync3](https://hoshinolabs.booth.pm/items/2666275)
+* [KineL式 VideoPlayer](https://kinel.booth.pm/items/2758684)
 
 マテリアルによっては正常に描画されない場合もございます。ご注意ください。
 
 ## 動作確認環境
 PCでのみ動作確認しています。
 * Unity2019.4.31f1
-* VRCSDK Base 3.1.10
-* VRCSDK Worlds 3.1.10
-* UdonSharp v1.1.5
-* iwaSync3 v3.5.1
-* Kinel式 v2.3.0(VCC向け U#1.x.x)
+* VRCSDK Base 3.2.1
+* VRCSDK Worlds 3.2.1
+* UdonSharp v1.1.8
+* iwaSync3 v3.5.5
+* Kinel式 v2.4.3_U_1.x
 
 
 ## 導入方法
@@ -37,20 +37,17 @@ PCでのみ動作確認しています。
 
    LightShaftProjector.unitypackageをインポートしてください。
 
-3. 不要なデータの削除
-
-   依存アセットが存在しないことによるエラーを解消するため、
-   iwaSync3のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_iwaSync` フォルダを、
-   Kinel式のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_Kinel` フォルダを
-   削除してください。
-
-4. Prefabの設置
+   この際、依存アセットが存在しないことによるエラーを防ぐため、
+   * iwaSync3のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_iwaSync` フォルダのチェックを外してください。
+   * Kinel式のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_Kinel` フォルダのチェックを外してください。
+3. Prefabの設置
 
    * VideoPlayerへの対応が不要な場合
      `Assets/LightShaftProjector/LightShaftProjector.prefab` をHierarchyに設置してください。
 
    * iwaSync3のスクリーンとして用いる場合
      `Assets/LightShaftProjector/for_iwaSync/LightShaftProjector_iwaSyncScreen.prefab` をHierarchyに設置してください。
+
      `LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_iwaSync)のCoreにiwaSync3のCoreを設定してください。
 
    * Kinel式のスクリーンとして用いる場合
@@ -58,9 +55,9 @@ PCでのみ動作確認しています。
 
      `LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_Kinel)のVideo PlayerにKinelVideoPlayerのKineLVP Systemを設定してください。
 
-5. _CameraDepthTextureの使用有無に対する設定
+4. _CameraDepthTextureの使用有無に対する設定
 
-   * _CameraDepthTextureを使用する場合
+   * **_CameraDepthTextureを使用する場合**<br>
      1. LightShaftマテリアルのUseCameraDepthにチェックを入れて下さい。
      2. リファレンスカメラ(Main Camera)のDepthTextureModeを設定する必要があります。
         VRC Scene DescriptorのReferece CameraにMain Cameraが設定されていることを確認してください。
@@ -71,9 +68,11 @@ PCでのみ動作確認しています。
 
      - ※DirectionalLightのCulling Maskで対象としていないオブジェクトでも_CameraDepthTextureには反映されます。
 
-   * _CameraDepthTextureを使用しない場合
+   * **_CameraDepthTextureを使用しない場合**<br>
      LightShaftマテリアルのUseCameraDepthのチェックを外してください。
-     前後関係を判断できず、一部の描写に制限がかかりますがあまり違和感なく表現できるかと思います。
+
+     前後関係を判断できず、一部の描写に制限がかかってしまいますが、
+     そこまで違和感なく表現できるかと思います。
 
 ## その他の設定について
 ### 投影する画像・映像の変更方法
@@ -94,10 +93,10 @@ _CameraDepthTextureの内容を描画するシェーダーを作成しました�
 `Assets/LightShaftProjector/Debug/CameraDepthTextureTestPlane.prefab`をHierarchyに配置してください。
 
 プレーンを置く前
-<img src="img/2023-03-11-21-04-58.png">
+<img src=".img/2023-03-11-21-04-58.png">
 
 プレーンを置いた後
-<img src="img/2023-03-11-21-03-49.png">
+<img src=".img/2023-03-11-21-03-49.png">
 
 正常に_CameraDepthTextureが生成されていると、このように深度が表示されます。
 
@@ -105,11 +104,61 @@ _CameraDepthTextureの内容を描画するシェーダーを作成しました�
 本データはVN3ライセンスにて公開しております。
 規約は下記のリンクをご確認ください。
 
-【日本語】
+【日本語】<br>
 https://drive.google.com/file/d/1fZ-5i4ItK_Tpkdhhth_YFttbmicsT8yC/view?usp=sharing
 
-【English】
+【English】<br>
 https://drive.google.com/file/d/1AaNaz9FnGFHD2i7_KNv_PmkcEFN4dnSU/view?usp=sharing
+
+## 更新履歴
+### 2023/6/21 v1.2.0
+* UdonSharp v1.1.8での動作を確認。
+* iwaSync v3.5.5での動作を確認。
+* Kinel Video Player v2.4.3_U_1.xに対応。
+
+### 2023/3/11 v.1.1.1
+* _CameraDepthTextureが生成されているか確認するシェーダーを追加。
+
+### 2022/11/27 v1.1.0
+* Kinel式 VideoPlayerのスクリーンとして使用するためのスクリプトを追加。
+
+### 2022/11/24 v1.0.9
+* idle画像を変更。
+* iwaSync用のUdonスクリプトをVCCのU#1.0に移行。<br>
+  VCCに移行していないプロジェクトではiwaSyncの画面として動作しなくなります。<br>
+  VCCに移行する際はiwaSyncも更新が必要となりますのでご注意ください。
+
+### 2022/8/13 v1.0.8
+* Projectorの光が当たらない場所にProjectionされる場合があった不具合を修正。
+
+### 2022/8/12 v1.0.7
+* iwaSync3 U#1.0版に対応したpackageを追加。
+
+### 2022/6/4 v1.0.6
+* アスペクト比が異なるテクスチャを入力しても正しく表示するように変更。
+
+### 2022/3/25 v1.0.5
+* LightShaftの描画品質向上
+* マテリアルのCull設定等をプロパティに追加。
+* iwaSync3との連携コンポーネントを1つに集約
+
+### 2022/1/16 v1.0.4
+* iwaSyncでLiveを再生した際に上下反転していた不具合を修正。
+
+### 2021/11/7 v1.0.3
+* シェーダーをまとめてシンプルに(CameraDepthTextureで分けていたシェーダーはマテリアル設定で切り替えるように変更しました。)
+* 最低限必要なデータに絞ってファイル構成をシンプルに
+
+### 2021/9/6 v1.0.2
+* 投影角度補正機能を追加。
+* マテリアルのフォルダを整理。
+
+### 2021/9/3 v1.0.1
+* LightShaftの距離減衰の計算を修正。
+* Boothで販売開始。
+
+### 2021/9/3 v1.0.0
+* 販売前テスト
 
 ## その他
 製作者
