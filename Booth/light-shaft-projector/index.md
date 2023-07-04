@@ -28,7 +28,7 @@ title: Light Shaft Projector
     - [\_CameraDepthTextureを生成出来ているかチェックしたい。](#_cameradepthtextureを生成出来ているかチェックしたい)
   - [利用規約](#利用規約)
   - [更新履歴](#更新履歴)
-    - [2023/6/29 v2.0.0](#2023629-v200)
+    - [2023/7/4 v2.0.0](#202374-v200)
     - [2023/6/21 v1.2.0](#2023621-v120)
     - [2023/3/11 v.1.1.1](#2023311-v111)
     - [2022/11/27 v1.1.0](#20221127-v110)
@@ -179,7 +179,7 @@ https://drive.google.com/file/d/1fZ-5i4ItK_Tpkdhhth_YFttbmicsT8yC/view?usp=shari
 https://drive.google.com/file/d/1AaNaz9FnGFHD2i7_KNv_PmkcEFN4dnSU/view?usp=sharing
 
 ## 更新履歴
-### 2023/6/29 v2.0.0
+### 2023/7/4 v2.0.0
 * リファクタリング
 * 影の描画品質を向上
 * 処理負荷を軽減
