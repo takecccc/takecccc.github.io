@@ -2,18 +2,63 @@
 title: Light Shaft Projector
 ---
 
-# Light Shaft Projector v1.2.0
+# Light Shaft Projector v2.0.0
+## 目次
+- [Light Shaft Projector v2.0.0](#light-shaft-projector-v200)
+  - [目次](#目次)
+  - [概要](#概要)
+  - [動作確認環境](#動作確認環境)
+  - [導入方法](#導入方法)
+    - [1. 依存アセットのインポート](#1-依存アセットのインポート)
+    - [2. LightShafrProjectorパッケージのインポート](#2-lightshafrprojectorパッケージのインポート)
+    - [3. Prefabの設置](#3-prefabの設置)
+      - [VideoPlayerへの対応が不要な場合](#videoplayerへの対応が不要な場合)
+      - [iwaSync3のスクリーンとして用いる場合](#iwasync3のスクリーンとして用いる場合)
+      - [Kinel式のスクリーンとして用いる場合](#kinel式のスクリーンとして用いる場合)
+      - [AVPro Video Playerのスクリーンとして用いる場合(TopazChat Player等)](#avpro-video-playerのスクリーンとして用いる場合topazchat-player等)
+    - [4. \_CameraDepthTextureの使用有無に対する設定](#4-_cameradepthtextureの使用有無に対する設定)
+      - [\_CameraDepthTextureを使用する場合](#_cameradepthtextureを使用する場合)
+      - [\_CameraDepthTextureを使用しない場合](#_cameradepthtextureを使用しない場合)
+  - [その他の設定について](#その他の設定について)
+    - [投影する画像・映像の変更方法](#投影する画像映像の変更方法)
+    - [プロジェクターを複数設置する場合](#プロジェクターを複数設置する場合)
+    - [FOV(Field Of View)を変更する場合](#fovfield-of-viewを変更する場合)
+    - [Tilt補正](#tilt補正)
+  - [トラブルシューティング](#トラブルシューティング)
+    - [\_CameraDepthTextureを生成出来ているかチェックしたい。](#_cameradepthtextureを生成出来ているかチェックしたい)
+  - [利用規約](#利用規約)
+  - [更新履歴](#更新履歴)
+    - [2023/6/29 v2.0.0](#2023629-v200)
+    - [2023/6/21 v1.2.0](#2023621-v120)
+    - [2023/3/11 v.1.1.1](#2023311-v111)
+    - [2022/11/27 v1.1.0](#20221127-v110)
+    - [2022/11/24 v1.0.9](#20221124-v109)
+    - [2022/8/13 v1.0.8](#2022813-v108)
+    - [2022/8/12 v1.0.7](#2022812-v107)
+    - [2022/6/4 v1.0.6](#202264-v106)
+    - [2022/3/25 v1.0.5](#2022325-v105)
+    - [2022/1/16 v1.0.4](#2022116-v104)
+    - [2021/11/7 v1.0.3](#2021117-v103)
+    - [2021/9/6 v1.0.2](#202196-v102)
+    - [2021/9/3 v1.0.1](#202193-v101)
+    - [2021/9/3 v1.0.0](#202193-v100)
+  - [その他](#その他)
+
 ## 概要
 本アセットはVRChatのワールド作成で利用することを想定した、
 モデル・シェーダー・U#スクリプト を提供するものです。
 
-サンプルワールド：
+サンプルワールド(v1.0.5)：
 https://vrchat.com/home/world/wrld_845135e5-3e62-4f81-a9cb-4786cc5e3dfd
 
+サンプルワールド(v2.0.0)：
+https://vrchat.com/home/world/wrld_1843fa75-5d87-447d-a08c-87d630e7bec7
+
 Unity2019対応。
-iwaSync3およびKineL式(りら式)VideoPlayerのスクリーンとしても用いることができます。
+iwaSync3, KineL式(りら式)VideoPlayer, AVPro Video Player(TopazChat Player等)のスクリーンとしても用いることができます。
 * [iwaSync3](https://hoshinolabs.booth.pm/items/2666275)
 * [KineL式 VideoPlayer](https://kinel.booth.pm/items/2758684)
+* [TopazChat Player](https://tyounanmoti.booth.pm/items/1752066)
 
 マテリアルによっては正常に描画されない場合もございます。ご注意ください。
 
@@ -25,54 +70,71 @@ PCでのみ動作確認しています。
 * UdonSharp v1.1.8
 * iwaSync3 v3.5.5
 * Kinel式 v2.4.3_U_1.x
+* TopazChat Player_3.3.1
 
 
 ## 導入方法
-1. 依存アセットのインポート
+### 1. 依存アセットのインポート
+iwaSync3またはKinel式のVideoPlayerのスクリーンとして使用する場合、先にUdonSharp(U#)とiwaSync3またはKinel式のインポートを実施してください。
+どちらのスクリーンとしても用いない場合は、このステップはスキップしてください。
 
-   iwaSync3またはKinel式のVideoPlayerのスクリーンとして使用する場合、先にUdonSharp(U#)とiwaSync3またはKinel式のインポートを実施してください。
-   どちらのスクリーンとしても用いない場合は、このステップはスキップしてください。
+### 2. LightShafrProjectorパッケージのインポート
+LightShaftProjector.unitypackageをインポートしてください。
 
-2. LightShafrProjectorパッケージのインポート
+この際、依存アセットが存在しないことによるエラーを防ぐため、
+* iwaSync3のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_iwaSync` フォルダのチェックを外してください。
+* Kinel式のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_Kinel` フォルダのチェックを外してください。
 
-   LightShaftProjector.unitypackageをインポートしてください。
+### 3. Prefabの設置
+#### VideoPlayerへの対応が不要な場合
+`Assets/LightShaftProjector/LightShaftProjector.prefab` をHierarchyに設置してください。
 
-   この際、依存アセットが存在しないことによるエラーを防ぐため、
-   * iwaSync3のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_iwaSync` フォルダのチェックを外してください。
-   * Kinel式のスクリーンとして用いない場合は `Assets/LightShaftProjector/for_Kinel` フォルダのチェックを外してください。
-3. Prefabの設置
+#### iwaSync3のスクリーンとして用いる場合
+`Assets/LightShaftProjector/for_iwaSync/LightShaftProjector_iwaSyncScreen.prefab` をHierarchyに設置してください。
 
-   * VideoPlayerへの対応が不要な場合
-     `Assets/LightShaftProjector/LightShaftProjector.prefab` をHierarchyに設置してください。
+`LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_iwaSync)のCoreにiwaSync3のCoreを設定してください。
 
-   * iwaSync3のスクリーンとして用いる場合
-     `Assets/LightShaftProjector/for_iwaSync/LightShaftProjector_iwaSyncScreen.prefab` をHierarchyに設置してください。
+<img src="img/2023-06-29-22-12-01.png">
 
-     `LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_iwaSync)のCoreにiwaSync3のCoreを設定してください。
+#### Kinel式のスクリーンとして用いる場合
+`Assets/LightShaftProjector/for_Kinel/LightShaftProjector_KinelScreen.prefab` をHierarchyに設置してください。
 
-   * Kinel式のスクリーンとして用いる場合
-     `Assets/LightShaftProjector/for_Kinel/LightShaftProjector_KinelScreen.prefab` をHierarchyに設置してください。
+`LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_Kinel)のVideo PlayerにKinelVideoPlayerのKineLVP Systemを設定してください。
 
-     `LightShaftProjector_iwaSyncScreen > Projector > ProjectionGimmick > textureUpdate` にアタッチされているU#スクリプト(ProjectorVideoScreen_Kinel)のVideo PlayerにKinelVideoPlayerのKineLVP Systemを設定してください。
+<img src="img/2023-06-29-22-13-22.png">
+    
+#### AVPro Video Playerのスクリーンとして用いる場合(TopazChat Player等)
+1. `Assets/LightShaftProjector/for_AVProVideoPlayer/LightShaftProjector_AVProVideoScreen.prefab` をHierarchyに設置してください。
 
-4. _CameraDepthTextureの使用有無に対する設定
+2. `LightShaftProjector_AVProVIdeoScreen > Projector > ProjectionGimmik`内にある、`Projection > Projection`および`LightShaft > LightShaft`にアタッチされている`VRC AVPro Video Screen`のVideoPlayerに、`VRC AVPro Video Player`がアタッチされているオブジェクトを設定してください。
 
-   * **_CameraDepthTextureを使用する場合**<br>
-     1. LightShaftマテリアルのUseCameraDepthにチェックを入れて下さい。
-     2. リファレンスカメラ(Main Camera)のDepthTextureModeを設定する必要があります。
-        VRC Scene DescriptorのReferece CameraにMain Cameraが設定されていることを確認してください。
+   <img src="img/2023-06-29-22-04-06.png">
 
-        Inspectorからはそのまま設定できないため、`Assets/LightShaftProjector/Scripts/DepthTextureMode.cs`をMain Cameraにアタッチし、ModeをDepthに変更してください。
+3. `LightShaftProjector_AVProVIdeoScreen > Projector > ProjectionGimmik`内にある、`Projection > Projection`および`LightShaft > LightShaft`のマテリアルの`Is AVPro Video`にチェックを入れてください。<br>
+   AVPro Videoモードの場合、テクスチャはガンマ補正されます。設定するテクスチャの設定のsRGBのチェックを外してください。
 
-     - ※_CameraDepthTextureはRealtimeなDirectionalLightが存在し、かつ影を受けるマテリアルでないと正常に動作しません。
+### 4. _CameraDepthTextureの使用有無に対する設定
 
-     - ※DirectionalLightのCulling Maskで対象としていないオブジェクトでも_CameraDepthTextureには反映されます。
+#### _CameraDepthTextureを使用する場合
+1. LightShaftマテリアルのUseCameraDepthにチェックを入れて下さい。
+2. リファレンスカメラ(Main Camera)のDepthTextureModeを設定する必要があります。<br>
+   VRC Scene DescriptorのReferece CameraにMain Cameraが設定されていることを確認してください。
+3. Inspectorからはそのまま設定できないため、`Assets/LightShaftProjector/Scripts/DepthTextureMode.cs`をMain Cameraにアタッチし、ModeをDepthに変更してください。
+   <img src="img/2023-06-29-22-17-09.png">
 
-   * **_CameraDepthTextureを使用しない場合**<br>
-     LightShaftマテリアルのUseCameraDepthのチェックを外してください。
+- ※_CameraDepthTextureはRealtimeなDirectionalLightが存在し、かつ影を受けるマテリアルでないと正常に動作しません。
+- ※DirectionalLightのCulling Maskで対象としていないオブジェクトでも_CameraDepthTextureには反映されます。
 
-     前後関係を判断できず、一部の描写に制限がかかってしまいますが、
-     そこまで違和感なく表現できるかと思います。
+#### _CameraDepthTextureを使用しない場合
+LightShaftマテリアルを次のように設定する必要があります。
+| Property | Value |
+| --- | --- |
+| UseCameraDepth | False |
+| Cull | Off |
+| ZTest | LessEqual |
+
+前後関係を判断できず、一部の描写に制限がかかってしまいますが、
+そこまで違和感なく表現できるかと思います。
 
 ## その他の設定について
 ### 投影する画像・映像の変更方法
@@ -85,6 +147,12 @@ ProjectionとLightShaftのマテリアルのTextureを指定してください�
 ### FOV(Field Of View)を変更する場合
 Depthカメラ・Projector・マテリアル・LightShaftモデルの設定を合わせる必要があります。
 FOV15°と30°のLightShaftモデルは用意してありますが、他のFOVが必要な場合は適宜用意をお願いいたします。
+
+### Tilt補正
+プロジェクターの投影面を回転させることにより、斜めから投影しても正しい形で投影することが可能です。
+1. LightShaftProjectorのPrefabのルートを投影面に正対するように回転させる。
+2. `ProjectionGimmick`を投影したい角度に調整
+3. マテリアル `ProjectionWidthDepth`, `LightShaft`のScreen Tiltに、`ProjectionGimmick`のRotation値を入力。
 
 ## トラブルシューティング
 ### _CameraDepthTextureを生成出来ているかチェックしたい。
@@ -111,6 +179,19 @@ https://drive.google.com/file/d/1fZ-5i4ItK_Tpkdhhth_YFttbmicsT8yC/view?usp=shari
 https://drive.google.com/file/d/1AaNaz9FnGFHD2i7_KNv_PmkcEFN4dnSU/view?usp=sharing
 
 ## 更新履歴
+### 2023/6/29 v2.0.0
+* リファクタリング
+* 影の描画品質を向上
+* 処理負荷を軽減
+* カメラと鏡に映るようにレイヤーを変更
+* プロジェクターのモデルを更新
+* テクスチャの設定を更新
+* フォルダ構成を整理
+* AVPro Video Screenとしての動作を確認
+
+※互換性の無い更新が多く含まれます。<br>
+**プロジェクトのバックアップを取った上で**、既存のLight Shaft Projectorのフォルダを削除してからインポートしてください。
+
 ### 2023/6/21 v1.2.0
 * UdonSharp v1.1.8での動作を確認。
 * iwaSync v3.5.5での動作を確認。
