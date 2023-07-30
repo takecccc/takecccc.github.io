@@ -3,7 +3,6 @@ title: Booth管理ページ
 ---
 
 github pages管理のBooth商品リスト
-
 * キュリシアちゃん対応
   - [curishia_baremid](curishia_baremid)
   - [curishia_bikini](curishia_bikini)
@@ -34,6 +33,8 @@ github pages管理のBooth商品リスト
   - [emistia_tunic](emistia_tunic)
   - [emistia_waistcoat](emistia_waistcoat)
   - [emistia_witch](emistia_witch)
+* エルキュナ2ちゃん対応
+  - [eruqyuna2_baremid](eruqyuna2_baremid)
 * Hermitちゃん対応
   - [hermit_tracksuit](hermit_tracksuit)
 * リミリアちゃん対応
