@@ -27,6 +27,7 @@ title: ラビットスーツ
 ### 対応アバター
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
 * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.2.4
+* [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
 
 ## 導入方法
 
@@ -54,9 +55,25 @@ title: ラビットスーツ
    * `Kemono`,`Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
+### キュリシアちゃん
+1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
+2. rabbit.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) キュリシアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/rabbit/prefab/curishia_rabbit_MA.prefab`を配置。
+5. アバターを調整
+   * BodyのBlendShapeの`Shrink_UpperLeg`,`Shrink_Knee`,`Shrink_LowerLeg`,`Shrink_Ankle`,`Shrink_Leg`,`Foot_flat`を100に設定。
+   * `Kemono`,`Headbang`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2023/8/6 v1.1.0
+* メッシュ・ウェイトを微調整。
+* キュリシアちゃんの対応を追加。
+
 2023/8/6 v1.0.0
-販売開始
+* 販売開始。
 
 ## 利用規約 Terms of Use
 本衣装はVN3ライセンスにて公開しております。
