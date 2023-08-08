@@ -19,12 +19,17 @@ header {
 }
 
 .page-content {
+    p {
+        margin-bottom: 5px;
+    }
     pre, code {
         background-color: #eee;
     }
     h1, h2, h3, h4, h5, h6{
         padding: 1px;
         font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
     }
     h1 {
         font-size: 1.3em;
