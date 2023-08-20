@@ -54,11 +54,11 @@ title: バーテンダー
 
 <!-- ### エルキュナ2ちゃん
 1. lilToon, エルキュナ2ちゃん, Modular Avatarのパッケージを先にインポート。
-2. rabbit.unitypackageをインポート。
+2. bartender.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エルキュナ2ちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/rabbit/prefab/eruqyuna2_rabbit_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/eruqyuna2_bartender_MA.prefab`を配置。
 5. アバターを調整
    * Body_torsoのBlendShapesの`Shrink_UpperLeg`,`Shrink_Knee`,`Shrink_LowerLeg`,`Shrink_Ankle`,`Shrink_Leg`を100に設定。
    * `Kemono_er`を非表示にし、TagをEditorOnlyに変更。
@@ -66,11 +66,11 @@ title: バーテンダー
 
 <!-- ### リミリアちゃん
 1. lilToon, リミリアちゃん, Modular Avatarのパッケージを先にインポート。
-2. rabbit.unitypackageをインポート。
+2. bartender.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) リミリアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/rabbit/prefab/eruqyuna2_rabbit_MA.prefab`を配置。(エルキュナ2ちゃんと共通素体)
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/eruqyuna2_bartender_MA.prefab`を配置。(エルキュナ2ちゃんと共通素体)
 5. アバターを調整
    * BodyのBlendShapesの`Shrink_UpperLeg`,`Shrink_Knee`,`Shrink_LowerLeg`,`Shrink_Ankle`,`Shrink_Leg`を100に設定。
    * `Kemono_er`を非表示にし、TagをEditorOnlyに変更。
@@ -78,7 +78,7 @@ title: バーテンダー
 
 ### キュリシアちゃん
 1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
-2. rabbit.unitypackageをインポート。
+2. bartender.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) キュリシアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
@@ -90,11 +90,11 @@ title: バーテンダー
 
 <!-- ### ユリスフィアちゃん
 1. lilToon, ユリスフィアちゃん, Modular Avatarのパッケージを先にインポート。
-2. rabbit.unitypackageをインポート。
+2. bartender.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) ユリスフィアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/YRISPHERE/Prefab/PhysBone/YRISPHERE_改変用素体_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/rabbit/prefab/yrisphere_rabbit_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/yrisphere_bartender_MA.prefab`を配置。
 5. アバターを調整
    * BodyのBlendShapesの`Foot_Heel`,`Leg_offf`を0に設定。
    * BodyのBlendShapesの`UpperLeg_off`,`knee_off`を100に設定。
@@ -104,11 +104,11 @@ title: バーテンダー
 
 <!-- ### エミスティアちゃん
 1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
-2. rabbit.unitypackageをインポート。
+2. bartender.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エミスティアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/rabbit/prefab/emistia_rabbit_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/emistia_bartender_MA.prefab`を配置。
 5. アバターを調整
    * BodyのBlendShapeの`Knee_high`を100に設定。
    * `Kemono`,`Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
