@@ -76,7 +76,7 @@ title: バーテンダー
 5. アバターを調整
    * BodyのBlendShapesの`Shrink_UpperLeg`,`Shrink_Knee`を100に設定。
    * BodyのBlendShapesの`Foot_flat`を70に設定。
-   * `Tights`を非表示にし、TagをEditorOnlyに変更。
+   * `Boots`,`Tights`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
 ### キュリシアちゃん
