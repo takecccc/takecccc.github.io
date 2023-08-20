@@ -41,7 +41,7 @@ title: バーテンダー
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 3.2.2
+* VRCSDK 3.2.3
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.0
 * [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.7.1
 
