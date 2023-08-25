@@ -11,6 +11,7 @@ title: 彼シャツ
 - [導入方法](#導入方法)
   - [エルキュナ2ちゃん](#エルキュナ2ちゃん)
   - [リミリアちゃん](#リミリアちゃん)
+  - [キュリシアちゃん](#キュリシアちゃん)
 - [更新履歴](#更新履歴)
 - [利用規約 Terms of Use](#利用規約-terms-of-use)
 - [その他](#その他)
@@ -27,7 +28,7 @@ title: 彼シャツ
 対応アバター
 * エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
 * リミリアちゃん https://skymy.booth.pm/items/4365043
-<!-- * キュリシアちゃん https://skymy.booth.pm/items/3990670 -->
+* キュリシアちゃん https://skymy.booth.pm/items/3990670
 <!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
 <!-- * エミスティアちゃん https://skymy.booth.pm/items/2992265 -->
 
@@ -47,7 +48,7 @@ title: 彼シャツ
 ### 対応アバター
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
-<!-- * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1 -->
+* [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 <!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.2.4 -->
 
@@ -78,7 +79,7 @@ title: 彼シャツ
    * boyfriend_shirtのBlendShapesをお好みで設定。
 6. VRChat SDKのControlPanelからアップロード。
 
-<!-- ### キュリシアちゃん
+### キュリシアちゃん
 1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
 2. boyfriend.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -86,9 +87,9 @@ title: 彼シャツ
    `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/boyfriend/prefab/curishia_boyfriend_MA.prefab`を配置。
 5. アバターを調整
-   * BodyのBlendShapeの`Shrink_UpperLeg`,`Shrink_Knee`,`Foot_flat`を100に設定。
-   * `Necklace`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+   * BodyのBlendShapeの`Foot_flat`を100に設定。
+   * boyfriend_shirtのBlendShapesをお好みで設定。
+6. VRChat SDKのControlPanelからアップロード。
 
 <!-- ### ユリスフィアちゃん
 1. lilToon, ユリスフィアちゃん, Modular Avatarのパッケージを先にインポート。
