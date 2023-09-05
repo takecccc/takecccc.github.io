@@ -118,6 +118,10 @@ title: バーテンダー
 6. VRChat SDKのControlPanelからアップロード。 -->
 
 ## 更新履歴
+2023/9/5 v1.2.0
+* エルキュナ2ちゃん、リミリアちゃんの衣装に腰回りを細くするシェイプキーを追加。
+  * bartender_braces, bartender_shirt, bartender_tie, bartender_waistcoatに`Waist_thin`を追加しています。
+
 2023/8/20 v1.1.0
 * エルキュナ2ちゃん、リミリアちゃんの対応を追加。
 
