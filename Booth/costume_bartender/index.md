@@ -41,9 +41,9 @@ title: バーテンダー
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 3.2.3
-* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.0
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.7.1
+* VRCSDK 3.3.0
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.7.5
 
 ### 対応アバター
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
@@ -118,6 +118,11 @@ title: バーテンダー
 6. VRChat SDKのControlPanelからアップロード。 -->
 
 ## 更新履歴
+2023/9/13 v1.3.0
+* キュリシアちゃんの衣装に腰回りを細くするシェイプキーを追加。
+* キュリシアちゃんの衣装のメッシュを微修正。
+* キュリシアちゃんの衣装にグローブを追加。
+
 2023/9/5 v1.2.0
 * エルキュナ2ちゃん、リミリアちゃんの衣装に腰回りを細くするシェイプキーを追加。
   * bartender_braces, bartender_shirt, bartender_tie, bartender_waistcoatに`Waist_thin`を追加しています。
