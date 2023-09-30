@@ -3,10 +3,11 @@ title: Booth管理ページ
 ---
 
 github pages管理のBooth商品リスト
-* 複数アバター対応
+* 複数アバター対応(予定も含む)
   - [costume_bartender](costume_bartender)
   - [costume_boyfriend](costume_boyfriend)
   - [costume_dancer](costume_dancer)
+  - [costume_pilot](costume_pilot)
   - [costume_rabbit](costume_rabbit)
 * キュリシアちゃん対応
   - [curishia_baremid](curishia_baremid)
