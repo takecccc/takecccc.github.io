@@ -39,9 +39,9 @@ title: パイロットスーツ
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 3.3.0
+* VRCSDK 3.4.0
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.7.6
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.0
 
 ### 対応アバター
 <!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3 -->
