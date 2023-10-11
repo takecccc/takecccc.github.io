@@ -9,6 +9,8 @@ title: パイロットスーツ
 - [動作確認環境](#動作確認環境)
   - [対応アバター](#対応アバター)
 - [導入方法](#導入方法)
+  - [エルキュナ2ちゃん](#エルキュナ2ちゃん)
+  - [リミリアちゃん](#リミリアちゃん)
   - [キュリシアちゃん](#キュリシアちゃん)
 - [更新履歴](#更新履歴)
 - [利用規約 Terms of Use](#利用規約-terms-of-use)
@@ -24,8 +26,8 @@ title: パイロットスーツ
 * Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
 対応アバター
-<!-- * エルキュナ2ちゃん https://skymy.booth.pm/items/4926689 -->
-<!-- * リミリアちゃん https://skymy.booth.pm/items/4365043 -->
+* エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
+* リミリアちゃん https://skymy.booth.pm/items/4365043
 * キュリシアちゃん https://skymy.booth.pm/items/3990670
 <!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
 <!-- * エミスティアちゃん https://skymy.booth.pm/items/2992265 -->
@@ -41,41 +43,41 @@ title: パイロットスーツ
 * Unity 2019.4.31f1
 * VRCSDK 3.4.0
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.0
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.1
 
 ### 対応アバター
-<!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3 -->
-<!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5 -->
+* [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
+* [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 <!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.2.4 -->
 
 ## 導入方法
 
-<!-- ### エルキュナ2ちゃん
+### エルキュナ2ちゃん
 1. lilToon, エルキュナ2ちゃん, Modular Avatarのパッケージを先にインポート。
-2. bartender.unitypackageをインポート。
+2. pilot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エルキュナ2ちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/eruqyuna2_bartender_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/pilot/prefab/eruqyuna2_pilot_MA.prefab`を配置。
 5. アバターを調整
-   * Body_torsoのBlendShapesの`Shrink_UpperLeg`,`Shrink_Knee`を100に設定。
-   * Body_torsoのBlendShapesの`Foot_flat`を70に設定。
+   * Body_torsoのBlendShapesの`Foot_flat`を75に設定。
+   * Kemono_erの`kemo_ear_off`を100に設定。
 6. VRChat SDKのControlPanelからアップロード。
 
 ### リミリアちゃん
 1. lilToon, リミリアちゃん, Modular Avatarのパッケージを先にインポート。
-2. bartender.unitypackageをインポート。
+2. pilot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) リミリアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/limilia_bartender_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/pilot/prefab/eruqyuna2_pilot_MA.prefab`を配置。
 5. アバターを調整
-   * BodyのBlendShapesの`Shrink_UpperLeg`,`Shrink_Knee`を100に設定。
-   * BodyのBlendShapesの`Foot_flat`を70に設定。
+   * BodyのBlendShapesの`Foot_flat`を75に設定。
    * `Boots`,`Tights`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+   * Kemonoの`cat_ear_off`を100に設定。
+6. VRChat SDKのControlPanelからアップロード。
 
 ### キュリシアちゃん
 1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
@@ -117,6 +119,10 @@ title: パイロットスーツ
 6. VRChat SDKのControlPanelからアップロード。 -->
 
 ## 更新履歴
+2023/10/11 v1.4.0
+* エルキュナ2ちゃん、リミリアちゃんの対応を追加。
+* ヘルメットのデカールをアバター依存とならない物に変更。
+
 2023/10/9 v1.3.0
 * ヘルメットのuvを改変しやすいように左右別で展開。
 * ヘルメットのテクスチャを調整。
