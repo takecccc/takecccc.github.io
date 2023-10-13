@@ -30,8 +30,8 @@ title: パイロットスーツ
 * エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
 * リミリアちゃん https://skymy.booth.pm/items/4365043
 * キュリシアちゃん https://skymy.booth.pm/items/3990670
+* エミスティアちゃん https://skymy.booth.pm/items/2992265
 <!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
-<!-- * エミスティアちゃん https://skymy.booth.pm/items/2992265 -->
 
 ## 内容物
 * 衣装Unitypackageファイル
@@ -50,8 +50,8 @@ title: パイロットスーツ
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
-<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
+<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 
 ## 導入方法
 
