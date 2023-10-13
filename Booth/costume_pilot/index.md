@@ -12,6 +12,7 @@ title: パイロットスーツ
   - [エルキュナ2ちゃん](#エルキュナ2ちゃん)
   - [リミリアちゃん](#リミリアちゃん)
   - [キュリシアちゃん](#キュリシアちゃん)
+  - [エミスティアちゃん](#エミスティアちゃん)
 - [更新履歴](#更新履歴)
 - [利用規約 Terms of Use](#利用規約-terms-of-use)
 - [その他](#その他)
@@ -50,7 +51,7 @@ title: パイロットスーツ
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
-<!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.2.4 -->
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
 
 ## 導入方法
 
@@ -106,19 +107,24 @@ title: パイロットスーツ
    * `kneehigh`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。 -->
 
-<!-- ### エミスティアちゃん
+### エミスティアちゃん
 1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
-2. bartender.unitypackageをインポート。
+2. pilot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エミスティアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/emistia_bartender_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/pilot/prefab/emistia_pilot_MA.prefab`を配置。
 5. アバターを調整
-   * BodyのBlendShapeの`Knee_high`を100に設定。
-   * `Kemono`,`Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+   * BodyのBlendShapeの`Hip_small`,`thigh_small`,`calf_small`を100に設定。
+   * `Ornaments`,`Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2023/10/13 v1.5.0
+* エミスティアちゃんの対応を追加。
+* 手袋のテクスチャを変更。
+* エルキュナ2ちゃん、リミリアちゃんの手袋の貫通を修正。
+
 2023/10/11 v1.4.0
 * エルキュナ2ちゃん、リミリアちゃんの対応を追加。
 * ヘルメットのデカールをアバター依存とならない物に変更。
