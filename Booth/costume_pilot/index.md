@@ -12,6 +12,7 @@ title: パイロットスーツ
   - [エルキュナ2ちゃん](#エルキュナ2ちゃん)
   - [リミリアちゃん](#リミリアちゃん)
   - [キュリシアちゃん](#キュリシアちゃん)
+  - [ユリスフィアちゃん](#ユリスフィアちゃん)
   - [エミスティアちゃん](#エミスティアちゃん)
 - [更新履歴](#更新履歴)
 - [利用規約 Terms of Use](#利用規約-terms-of-use)
@@ -30,8 +31,8 @@ title: パイロットスーツ
 * エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
 * リミリアちゃん https://skymy.booth.pm/items/4365043
 * キュリシアちゃん https://skymy.booth.pm/items/3990670
+* ユリスフィアちゃん https://skymy.booth.pm/items/3486694
 * エミスティアちゃん https://skymy.booth.pm/items/2992265
-<!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
 
 ## 内容物
 * 衣装Unitypackageファイル
@@ -50,8 +51,8 @@ title: パイロットスーツ
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
+* [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0
 * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
-<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 
 ## 導入方法
 
@@ -93,19 +94,16 @@ title: パイロットスーツ
    * `Headbang`,`Necklace`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
-<!-- ### ユリスフィアちゃん
+### ユリスフィアちゃん
 1. lilToon, ユリスフィアちゃん, Modular Avatarのパッケージを先にインポート。
-2. bartender.unitypackageをインポート。
+2. pilot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
    ex) ユリスフィアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/YRISPHERE/Prefab/PhysBone/YRISPHERE_改変用素体_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/bartender/prefab/yrisphere_bartender_MA.prefab`を配置。
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/pilot/prefab/yrisphere_pilot_MA.prefab`を配置。
 5. アバターを調整
    * BodyのBlendShapesの`Foot_Heel`,`Leg_offf`を0に設定。
-   * BodyのBlendShapesの`UpperLeg_off`,`knee_off`を100に設定。
-   * UnderwearのBlendShapesの`gather_off`を100に設定。
-   * `kneehigh`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+6. VRChat SDKのControlPanelからアップロード。
 
 ### エミスティアちゃん
 1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
@@ -120,6 +118,9 @@ title: パイロットスーツ
 6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2023/10/15 v1.6.0
+* ユリスフィアちゃんの対応を追加。
+
 2023/10/13 v1.5.0
 * エミスティアちゃんの対応を追加。
 * 手袋のテクスチャを変更。
