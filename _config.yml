@@ -30,13 +30,15 @@ github_username:  takecccc
 # Build settings
 # theme: minima
 theme: minima
-plugins:
-  - jekyll-feed
-header_pages:
-  - about.md
+# plugins:
+#   - jekyll-feed
+# header_pages:
+#   - about.md
 
 # Markdown settings
-markdown: GFM
+markdown: kramdown
+kramdown:
+  auto_ids: true
 
 defaults:
   -
