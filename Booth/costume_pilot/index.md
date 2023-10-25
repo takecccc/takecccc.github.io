@@ -43,7 +43,7 @@ title: パイロットスーツ
 
 ## 動作確認環境
 * Unity 2019.4.31f1
-* VRCSDK 3.4.0
+* VRCSDK 3.4.1
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
 * [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.1
 
@@ -118,6 +118,9 @@ title: パイロットスーツ
 6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2023/10/25 v1.8.0
+* キャップを追加。
+
 2023/10/17 v1.7.0
 * キュリシアちゃんの袖まくりを調整。
 * ヘルメットのデカールの位置を調整。
