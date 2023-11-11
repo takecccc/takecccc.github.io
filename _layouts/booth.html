@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "jp" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <div id="main-wrapper">
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+    </div>
+
+    {%- if page.no-sidebar -%}
+    {%- else -%}
+    <div class="sidebar-toc">
+      <div class="toc">
+      {% include toc.html html=content %}
+      </div>
+    </div>
+
+    <a id="sidebar-toc-btn">≡</a>
+
+    <script>
+      document.body.setAttribute('html-show-sidebar-toc', true)
+      var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+      sidebarTOCBtn.addEventListener('click', function(event) {
+        event.stopPropagation()
+        if (document.body.hasAttribute('html-show-sidebar-toc')) {
+          document.body.removeAttribute('html-show-sidebar-toc')
+        } else {
+          document.body.setAttribute('html-show-sidebar-toc', true)
+        }
+      })
+    </script>
+    {%- endif -%}
+
+  </body>
+
+</html>

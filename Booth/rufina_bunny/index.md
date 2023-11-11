@@ -1,5 +1,7 @@
 ---
 title: 【Rufinaちゃん対応】 バニースーツ
+html:
+  toc: true
 ---
 
 # 【Rufinaちゃん対応】バニースーツ

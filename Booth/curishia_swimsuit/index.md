@@ -1,9 +1,10 @@
 ---
 title: 【キュリシアちゃん対応】スクール水着
+html:
+   toc: true
 ---
 
 # 【キュリシアちゃん対応】スクール水着
-この度はAtelier Takecにてご購入いただき誠にありがとうございます。
 
 ## 概要
 本アセットはSKYMY Workshop様のキュリシアちゃん( https://skymy.booth.pm/items/3990670 )に対応した衣装の3Dモデルです。

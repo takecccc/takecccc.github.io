@@ -1,5 +1,6 @@
 ---
 title: Booth管理ページ
+no-sidebar: true
 ---
 
 github pages管理のBooth商品リスト

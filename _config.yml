@@ -28,24 +28,31 @@ twitter_username: takec_vrc
 github_username:  takecccc
 
 # Build settings
-# theme: minima
 theme: minima
+
 # plugins:
 #   - jekyll-feed
 # header_pages:
 #   - about.md
 
 # Markdown settings
-markdown: kramdown
+# markdown: kramdown
+# lsi: false
+# safe: true
+# highlighter: rouge
+# kramdown:
+#   math_engine: mathjax
+#   syntax_highlighter: rouge
+#   input: GFM
+#   auto_ids: true
 
-lsi: false
-safe: true
-highlighter: rouge
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-  input: GFM
-  auto_ids: true
+markdown: CommonMarkGhPages
+commonmark:
+  extensions:
+  - strikethrough
+  - tagfilter
+  - table
+  - autolink
 
 defaults:
   -
@@ -53,6 +60,11 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: "Booth"
+    values:
+      layout: "booth"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
