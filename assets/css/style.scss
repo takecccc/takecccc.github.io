@@ -1,6 +1,27 @@
 ---
 ---
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 header {
     font-family: RodinNTLGPro-EB;
     background-color: rgba(20,39,59,.8);
@@ -55,22 +76,14 @@ html {
     scroll-padding-top: 10px;
 }
 
-body[html-show-sidebar-toc] #main-wrapper {
-    left: 300px;
-    width: calc(100% - 300px);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body #main-wrapper {
-    position: relative;
+#sidebar {
+    flex:none;
+    position: sticky;
     top: 0;
-    min-height: 100vh;
-}
-
-.sidebar-toc ul, .sidebar-toc ol {
-    margin-left: 10px;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 0 0 4px rgba(150,150,150,.33);
+    box-sizing: border-box;
 }
 
 body:not([html-show-sidebar-toc]) .sidebar-toc {
@@ -78,28 +91,28 @@ body:not([html-show-sidebar-toc]) .sidebar-toc {
 }
 
 body[html-show-sidebar-toc] .sidebar-toc {
-    position:fixed;
-    top: 0;
-    left: 0;
+    flex: none;
     width: 300px;
-    height: 100%;
     padding: 20px;
-    scroll-padding-bottom: 30px;
-    box-shadow: 0 0 4px rgba(150,150,150,.33);
-    box-sizing: border-box;
+    height: -webkit-calc(100vh - (20px*2));
+    height: calc(100vh - (20px*2));
+    background-color: rgb(255,255,255);
     overflow: auto;
-    background-color: inherit;
+}
+.sidebar-toc ul, .sidebar-toc ol {
+    margin-left: 10px;
 }
 
 body #sidebar-toc-btn {
-    position: fixed;
-    bottom: 8px;
-    left: 8px;
+    flex: none;
+    top: 0;
+    width: 36px;
+    height: 100vh;
     font-size: 28px;
     cursor: pointer;
-    color: inherit;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
     z-index: 99;
-    width: 32px;
     text-align: center;
     opacity: .4;
     text-decoration: none;

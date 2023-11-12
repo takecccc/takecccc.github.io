@@ -3,44 +3,47 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="flex-col-container">
 
-    <div id="main-wrapper">
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    <div class="flex-row-container">
+      <!-- sidebar -->
+      {%- if page.no-sidebar -%}
+      {%- else -%}
+      <div id="sidebar" class="flex-row-container">
+        <a id="sidebar-toc-btn">≡</a>
+        <div class="sidebar-toc">
+          <div class="toc">
+          目次
 
+          {% include toc.html html=content %}
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.body.setAttribute('html-show-sidebar-toc', true)
+        var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+        sidebarTOCBtn.addEventListener('click', function(event) {
+          event.stopPropagation()
+          if (document.body.hasAttribute('html-show-sidebar-toc')) {
+            document.body.removeAttribute('html-show-sidebar-toc')
+          } else {
+            document.body.setAttribute('html-show-sidebar-toc', true)
+          }
+        })
+      </script>
+      {%- endif -%}
+
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+    </div>
+    
     {%- include footer.html -%}
-    </div>
-
-    {%- if page.no-sidebar -%}
-    {%- else -%}
-    <div class="sidebar-toc">
-      <div class="toc">
-      {% include toc.html html=content %}
-      </div>
-    </div>
-
-    <a id="sidebar-toc-btn">≡</a>
-
-    <script>
-      document.body.setAttribute('html-show-sidebar-toc', true)
-      var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-      sidebarTOCBtn.addEventListener('click', function(event) {
-        event.stopPropagation()
-        if (document.body.hasAttribute('html-show-sidebar-toc')) {
-          document.body.removeAttribute('html-show-sidebar-toc')
-        } else {
-          document.body.setAttribute('html-show-sidebar-toc', true)
-        }
-      })
-    </script>
-    {%- endif -%}
-
   </body>
 
 </html>
