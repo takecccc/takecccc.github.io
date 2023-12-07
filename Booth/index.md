@@ -11,6 +11,7 @@ github pages管理のBooth商品リスト
   - [costume_dancer](costume_dancer)
   - [costume_pilot](costume_pilot)
   - [costume_rabbit](costume_rabbit)
+  - [costume_santa](costume_santa)
 * キュリシアちゃん対応
   - [curishia_baremid](curishia_baremid)
   - [curishia_bikini](curishia_bikini)
