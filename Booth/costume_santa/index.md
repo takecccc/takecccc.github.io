@@ -15,10 +15,10 @@ html:
 * Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
 対応アバター
-<!-- * エルキュナ2ちゃん https://skymy.booth.pm/items/4926689 -->
+* エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
 <!-- * リミリアちゃん https://skymy.booth.pm/items/4365043 -->
 * キュリシアちゃん https://skymy.booth.pm/items/3990670
-<!-- * エミスティアちゃん https://skymy.booth.pm/items/2992265 -->
+* エミスティアちゃん https://skymy.booth.pm/items/2992265
 <!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
 
 ## 内容物
@@ -29,21 +29,21 @@ html:
 * 衣装テクスチャファイル
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 3.4.2
-* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
+* Unity 2022.3.6f1
+* VRCSDK 3.5.0
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.5.0
 * [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.3
 
 ### 対応アバター
-<!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3 -->
+* [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
 <!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5 -->
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
-<!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1 -->
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 
 ## 導入方法
 
-<!-- ### エルキュナ2ちゃん
+### エルキュナ2ちゃん
 1. lilToon, エルキュナ2ちゃん, Modular Avatarのパッケージを先にインポート。
 2. santa.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -51,10 +51,8 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/eruqyuna2_santa_MA.prefab`を配置。
 5. アバターを調整
-   * `Armature/Hips/Hips.DB1`の`HipsDB1.L`と`HipsDB1.R`の`VRC Phys Bone`コンポーネントをオフに。
-   * `Body_torso`のBlendShapesの`Foot_flat`を75に設定。
    * `Underwear_er`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+6. VRChat SDKのControlPanelからアップロード。
 
 <!-- ### リミリアちゃん
 1. lilToon, リミリアちゃん, Modular Avatarのパッケージを先にインポート。
@@ -64,8 +62,6 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/limilia_santa_MA.prefab`を配置。
 5. アバターを調整
-   * `Armature/Hips/Hips.DB1`の`HipsDB1.L`と`HipsDB1.R`の`VRC Phys Bone`コンポーネントをオフに。
-   * `Body`のBlendShapesの`Foot_flat`を75に設定。
    * `Boots`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。 -->
 
@@ -94,7 +90,7 @@ html:
    * BodyのBlendShapesの`Foot_Heel`,`Leg_offf`を0に設定。
 6. VRChat SDKのControlPanelからアップロード。 -->
 
-<!-- ### エミスティアちゃん
+### エミスティアちゃん
 1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
 2. santa.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -102,11 +98,17 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/emistia_santa_MA.prefab`を配置。
 5. アバターを調整
+   * `Body`のBlendShapeの`foot_heel`を100に設定。
    * `Kemono`のBlendShapeの`Tail_cover_off`を100に設定。
    * `Necklace`,`Shoes`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2023/12/13 v1.1.0
+* 胸のシェイプキーを修整
+* エルキュナ2ちゃん、エミスティアちゃんの対応を追加。
+* プレファブ名にサフィックスを付け忘れていたので修正。
+
 2023/12/7 v1.0.0
 * 販売開始
 
