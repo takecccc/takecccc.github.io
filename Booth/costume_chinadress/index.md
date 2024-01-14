@@ -19,6 +19,7 @@ html:
 * リミリアちゃん https://skymy.booth.pm/items/4365043
 * キュリシアちゃん https://skymy.booth.pm/items/3990670
 * エミスティアちゃん https://skymy.booth.pm/items/2992265
+* リセリエちゃん https://vividplum.booth.pm/items/4906263
 <!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
 
 ## 内容物
@@ -29,8 +30,8 @@ html:
 * 衣装テクスチャファイル
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 3.4.1
+* Unity 2022.3.6f1
+* VRCSDK 3.5.0
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.4.1
 * [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.1
 
@@ -39,6 +40,7 @@ html:
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
 * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
+* [リセリエちゃん](https://vividplum.booth.pm/items/4906263) v1.0.4
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
 
 ## 導入方法
@@ -105,7 +107,32 @@ html:
    * `Necklace`,`Shoes`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
+### リセリエちゃん
+1. lilToon, リセリエちゃん, Modular Avatarのパッケージを先にインポート。
+2. chinadress.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) リセリエちゃんの素体prefab。<br>
+   * `Assets\VIVIDPLUM\Liserie\Liserie_Naked.prefab`
+   * `Assets\VIVIDPLUM\Liserie\Liserie_ShortHair_Naked.prefab`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/chinadress/prefab/liserie_chinadress_MA.prefab`を配置。
+5. アバターを調整。
+   * `Bra`,`Pants`を非表示にし、TagをEditorOnlyに変更。
+   * `Body_torso`の次のBlendShapeを100に変更。<br>
+     * `Hips1`, `Hips2`
+     * `UpperLeg1.R`, `UpperLeg1.L`,
+     * `UpperLeg2.R`, `UpperLeg2.L`,
+     * `Unkle.R`, `Unkle.L`,
+     * `Foot.R`, `Foot.L`,
+     * `Toe.R`, `Toe.L`,
+     * `Stocking.R`, `Stocking.L`,
+   * `Body_torso`のBlendShapeについて、胸サイズを好みで調整。
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2024/1/14 v1.2.0
+* リセリエちゃんの対応を追加。
+* 動作確認環境のバージョンを更新。
+
 2023/11/12 v1.1.0
 * 改変用にPSDファイルを追加
 
