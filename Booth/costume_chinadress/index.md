@@ -121,6 +121,9 @@ html:
      * `Hips1`, `Hips2`
      * `UpperLeg1.R`, `UpperLeg1.L`,
      * `UpperLeg2.R`, `UpperLeg2.L`,
+     * `Knee.R`, `Knee.L`,
+     * `LowerLeg1.R`, `LowerLeg1.L`,
+     * `LowerLeg2.R`, `LowerLeg2.L`,
      * `Unkle.R`, `Unkle.L`,
      * `Foot.R`, `Foot.L`,
      * `Toe.R`, `Toe.L`,
