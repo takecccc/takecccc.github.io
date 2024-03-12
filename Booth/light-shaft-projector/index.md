@@ -16,14 +16,14 @@ https://vrchat.com/home/world/wrld_845135e5-3e62-4f81-a9cb-4786cc5e3dfd
 サンプルワールド(v2.0.0)：
 https://vrchat.com/home/world/wrld_1843fa75-5d87-447d-a08c-87d630e7bec7
 
-Unity2019対応。
+Unity2022対応。
 VizVid, iwaSync3, KineL式(りら式)VideoPlayer, AVPro Video Player(TopazChat Player等)のスクリーンとして用いることができます。
 * [VizVid](https://booth.pm/ja/items/5056077)
 * [iwaSync3](https://hoshinolabs.booth.pm/items/2666275)
 * [KineL式 VideoPlayer](https://kinel.booth.pm/items/2758684)
 * [TopazChat Player](https://tyounanmoti.booth.pm/items/1752066)
 
-マテリアルによっては正常に描画されない場合もございます。ご注意ください。
+投影対称物のマテリアルによっては正常に描画されない場合もございます。ご注意ください。
 
 ## 2. 動作確認環境
 PCでのみ動作確認しています。
