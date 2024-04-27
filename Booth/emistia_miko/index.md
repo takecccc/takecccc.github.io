@@ -11,7 +11,10 @@ html:
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * Clothの頂点数およびPhysBoneのコンポーネント数によってVeryPoorとなります。
-* lilToonを使用。
+
+使用アセット
+* lilToon ( https://lilxyzw.github.io/lilToon/#/ )
+* Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
 ## 内容物
 * Unitypackageファイル
@@ -19,33 +22,45 @@ html:
   * マテリアル
   * 着替えアニメーション、エクスプレッションメニュー
   * コンポーネント設定済み衣装prefab
-  * エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み) ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
-* 衣装テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
+* 衣装テクスチャファイル(clip, psd, png)
 * モデルファイル(fbx)
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 2022.04.26.15.46
-* エミスティアちゃん v1.2.2
-* lilToon v1.2.12
+* Unity 2022.3.6f1
+* VRCSDK 3.5.2
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.10
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, EMISTIAちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_miko.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんv1.2.2対応
-   `Assets/Takec/EMISTIA/model/miko/EMISTIA_miko_for_v1.2.2.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エミスティアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. Hierarchy上のアバター直下に衣装プレファブを配置
+   * Clothあり `Assets/Takec/EMISTIA/model/miko/prefab/EMISTIA_miko_with_Cloth_MA.prefab`
+   * Clothなし `Assets/Takec/EMISTIA/model/miko/prefab/EMISTIA_miko_without_Cloth_MA.prefab`
+5. アバターを調整
+   * `Shoes`, `Tights`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合や本体にリンクしたprefabが動作しなくなった場合等はfbxもしくは衣装prefabファイルをご利用ください。
+## 更新履歴
+2024/4/27 v2.0.0
+* Modular Avatarを使用したセットアップに変更。
+* Clothコンポーネントを削除したプレファブを追加。
 
-fbx : `Assets/Takec/EMISTIA/model/miko/EMISTIA_miko.fbx`
+2022/5/2 v1.1.0
+* 白衣のメッシュ・ウェイトを調整。
+* 袴のコライダーを調整。
+* DynamicBoneからPhysBoneに変更。
+* シェーダーをlilToonに変更。
 
-コンポーネント設定済み衣装prefab : `Assets/Takec/EMISTIA/model/miko/EMISTIA_miko.prefab`
+2022/4/2 v1.0.1
+* 暗いワールドで白が濁ってしまっていたので、マテリアルのパラメーターを調整。
 
-AbatarTools( https://takec.booth.pm/items/3411988 )のAvatarAssemblerでのアセンブルに対応しております。
+2021/12/29 v1.0.0
+* 販売開始
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
