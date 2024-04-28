@@ -10,8 +10,9 @@ html:
 本アセットはSKYMY工房様のエミスティアちゃん( https://booth.pm/ja/items/2992265 )に対応した衣装の3Dモデルです。
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
-* ユニティちゃんトゥーンシェーダー2.0を使用。
-* Cloth実装済み。
+使用アセット
+* lilToon ( https://lilxyzw.github.io/lilToon/#/ )
+* Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
 ※Clothコンポーネントに使用しているメッシュの頂点数の関係でAvatarRankはVeryPoorとなります。ご承知ください。
 
@@ -21,32 +22,48 @@ html:
   * マテリアル
   * 着替えアニメーション、エクスプレッションメニュー
   * コンポーネント設定済み衣装prefab
-  * エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み) ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
 * 衣装テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
 * モデルファイル(fbx)
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 2022.04.21.03.29
-* エミスティアちゃん v1.2.1
-* ユニティちゃんトゥーンシェーダー v2.0.7
+* Unity 2022.3.6f1
+* VRCSDK 3.5.2
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.10
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, EMISTIAちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_long_dress.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんv1.2.1対応
-   `Assets/Takec/EMISTIA/model/long_dress/EMISTIA_long_dress_for_v1.2.1.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エミスティアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. Hierarchy上のアバター直下に衣装プレファブを配置
+   * `Assets/Takec/EMISTIA/model/long_dress/prefab/EMISTIA_long_dress_MA.prefab`
+5. アバターを調整
+   * `Shoes`, `Tights`を非表示にし、TagをEditorOnlyに変更。
+   * `Kemono`のBlendShapeの`Tail_cover_off`を100に変更。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合や本体にリンクしたprefabが動作しなくなった場合等はfbxもしくは衣装prefabファイルをご利用ください。
+## 更新履歴
+2024/4/28 v2.0.0
+* Modular Avatarを使用したセットアップに変更。
+* マテリアルをLilToonに変更。
 
-`Assets/Takec/EMISTIA/model/long_dress/EMISTIA_long_dress.fbx`  
-`Assets/Takec/EMISTIA/model/long_dress/EMISTIA_long_dress.prefab`
+2022/4/25 v1.1.0
+* 本体v1.2.1に対応したprefabに入れ替え。
 
-AbatarTools( https://takec.booth.pm/items/3411988 )のAvatarAssemblerでのアセンブルに対応しております。
+2021/11/1 v1.0.2
+* 改変済みのエミスティアちゃんに組み込みやすいようにコンポーネント設定済みの衣装のprefabを追加しました。
+* つま先のコンポーネントの設定を行うため、fbxにリーフボーンを追加しました。
+* AvatarAssemblerでの結合に対応するため、既存のボーンではなく、追加のボーンにコライダーを追加するように変更しました。
+
+2021/10/22 v1.0.1
+* Material 1,2のテクスチャのWrap ModeがRepeatに設定されておりmipmapでテクスチャ境界が目立ってしまっていたのを修正。
+* お尻と太腿のDBを無効化した上でシルエットを重視したコライダーに微調整。
+
+2021/10/21 v1.0.0
+* 販売開始
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
