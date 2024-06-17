@@ -10,39 +10,55 @@ html:
 本アセットはSKYMY工房様のエミスティアちゃん( https://skymy.booth.pm/items/2992265 )に対応した衣装の3Dモデルです。
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
-* ユニティちゃんトゥーンシェーダー2.0を使用。
+使用アセット
+* lilToon ( https://lilxyzw.github.io/lilToon/#/ )
+* Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
 ## 内容物
 * Unitypackageファイル
   * fbx
   * マテリアル
   * 着替えアニメーション、エクスプレッションメニュー
-  * エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み) ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
+  * コンポーネント設定済み衣装prefab
 * 衣装テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
 * モデルファイル(fbx)
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 2022.04.21.03.29
-* エミスティアちゃん v1.2.1
-* ユニティちゃんトゥーンシェーダー v2.0.7
+* Unity 2022.3.22f1
+* VRChat SDK 3.6.1
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.10
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
-2. EMISTIA_waistcoat.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんv1.2.1対応。
-   `Assets/Takec/EMISTIA/model/waistcoat/EMISTIA_waistcoat_for_v1.2.1.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+1. lilToon, EMISTIAちゃん, Modular Avatarのパッケージを先にインポート。
+2. EMISTIA_wastcoat.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エミスティアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. Hierarchy上のアバター直下に衣装プレファブを配置
+   * `Assets/Takec/EMISTIA/model/wastcoat/prefab/EMISTIA_waistcoat_MA.prefab`
+5. アバターを調整
+   * `Body`のBlendShapesの`thigh_small`を50に設定。
+   * `Kemono`のBlendShapesの`Tail_cover_off`を100に設定。
+   * `Underwear`のBlendShapesの`Underwear_race_off`,`Underwear_hirahira_off`を100に設定。
+   * `Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合や本体にリンクしたprefabが動作しなくなった場合等はfbxファイルをご利用ください。
+## 更新履歴
+2024/6/17 v2.0.0
+* Modular Avatarを用いたセットアップに変更。
+* ShaderをUTSからlilToonに変更。
 
-fbx : `Assets/Takec/EMISTIA/model/waistcoat/EMISTIA_waistcoat.fbx`
+2022/4/25 v1.1.0
+* お尻のボーン構造に不具合があったのを修正。
+* 本体v1.2.1に対応したprefabを追加。
 
-AbatarTools( https://kurotori.booth.pm/items/1564788 )のAvatarAssemblerでのアセンブルに対応しております。
-お尻と太もものDynamicBoneは無効にすることを想定しています。
+2022/4/2 v1.0.1
+* カラーバリエーションを追加。
+
+2022/4/2 v1.0.0
+* 販売開始
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
