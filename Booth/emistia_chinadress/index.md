@@ -8,6 +8,7 @@ html:
 
 ## 概要
 本アセットはSKYMY工房様のエミスティアちゃん( https://skymy.booth.pm/items/2992265 )に対応した衣装の3Dモデルです。
+
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * Cloth使用。
@@ -19,33 +20,38 @@ Clothの頂点数により、VeryPoorとなります。ご了承ください。
 * Unitypackageファイル
   * fbx
   * マテリアル
-  * エミスティアちゃん本体のデータにリンクしたprefab ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
+  * コンポーネント設定済み衣装prefab
 * テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
 * モデルファイル(fbx)
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 2022.06.03.00.04
-* エミスティアちゃん v1.2.2
-* lilToon v1.2.12
+* Unity 2022.3.22f1
+* VRChat SDK 3.6.1
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.13
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, EMISTIAちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_chinadress.unitypackageをインポート。
-3. プレファブを配置
-   本体データにリンクしたprefabを用意してあります。
-   エミスティアちゃんv1.2.2対応。
-   `Assets/Takec/EMISTIA/model/chinadress/EMISTIA_chinadress_for_v1.2.2.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エミスティアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. Hierarchy上のアバター直下に衣装プレファブを配置
+   * `Assets/Takec/EMISTIA/model/chinadress/prefab/EMISTIA_chinadress_MA.prefab`
+   * `Assets/Takec/EMISTIA/model/chinadress/prefab/EMISTIA_chinadress2_MA.prefab`
+   * `Assets/Takec/EMISTIA/model/chinadress/prefab/EMISTIA_chinadress3_MA.prefab`
+5. アバターを調整
+   * `Kemono`のBlendShapesの`Tail_cover_off`を100に設定。
+   * `Shoes`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合やprefabが動作しなくなった場合等はfbxファイルもしくはCloth設定済みのprefabをご利用ください。
+## 更新履歴
+2024/6/18 v2.0.0
+* Modular Avatarを使用したセットアップに変更。
 
-`Assets/Takec/EMISTIA/model/chinadress/EMISTIA_chinadress.prefab`  
-`Assets/Takec/EMISTIA/model/chinadress/EMISTIA_chinadress2.prefab`  
-`Assets/Takec/EMISTIA/model/chinadress/EMISTIA_chinadress3.prefab`
-
-AbatarTools( https://takec.booth.pm/items/3411988 )のAvatarAssemblerでのアセンブルに対応しております。
+2022/6/7 v1.0.0
+* 販売開始
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
