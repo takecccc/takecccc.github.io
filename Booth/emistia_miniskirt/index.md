@@ -8,10 +8,11 @@ html:
 
 ## 概要
 本アセットはSKYMY工房様のエミスティアちゃん( https://skymy.booth.pm/items/2992265 )に対応した衣装の3Dモデルです。
+
 ※本データにエミスティアちゃん本体のデータは含まれておりません。
 
 * Clothの頂点数およびコライダーの数によってVeryPoorとなります。
-* ユニティちゃんトゥーンシェーダー2.0を使用。
+* lilToonを使用。
 
 ## 内容物
 * Unitypackageファイル
@@ -19,33 +20,52 @@ html:
   * マテリアル
   * 着替えアニメーション、エクスプレッションメニュー
   * コンポーネント設定済み衣装prefab
-  * エミスティアちゃん本体のデータにリンクしたprefab(着替え等実装済み) ※本体データの今後の更新によりprefabは使えなくなる可能性がございます。ご了承ください。
 * 衣装テクスチャファイル(clip, psd, png) ※psdはclipstudioで保存したものです。
 * モデルファイル(fbx)
 
 ## 動作確認環境
-* Unity 2019.4.31f1
-* VRCSDK 2022.04.21.03.29
-* エミスティアちゃん v1.2.1
-* ユニティちゃんトゥーンシェーダー v2.0.7
+* Unity 2022.3.22f1
+* VRChat SDK 3.6.1
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.13
 
 ## 導入方法
-1. VRCSDK、EMISTIAちゃんのパッケージを先にインポート。
+1. lilToon, EMISTIAちゃん, Modular Avatarのパッケージを先にインポート。
 2. EMISTIA_miniskirt.unitypackageをインポート。
-3. プレファブを配置
-   着替えのエクスプレッションメニュー等設定済みのprefabを用意してあります。
-   エミスティアちゃんのv1.2.1対応。
-   `Assets/Takec/EMISTIA/model/miniskirt/EMISTIA_miniskirt_for_v1.2.1.prefab`
-   ※prefabは本体の今後の更新によって動作しなくなる可能性があります。
-4. VRChat SDKのControlPanelからアップロード
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エミスティアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
+4. Hierarchy上のアバター直下に衣装プレファブを配置
+   * `Assets/Takec/EMISTIA/model/miniskirt/prefab/EMISTIA_miniskirt_MA.prefab`
+5. アバターを調整
+   * `Kemono`のBlendShapesの`Tail_cover_off`を100に設定。
+   * `Shoes`,`Tights`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
-※自分の改変済みモデルに組み込みたい場合や本体にリンクしたprefabが動作しなくなった場合等はfbxもしくは衣装prefabファイルをご利用ください。
+## 更新履歴
+2024/6/18 v2.0.0
+* Modular Avatarを使用したセットアップに変更。
+* シェーダーをUTSからlilToonに変更。
 
-fbx : `Assets/Takec/EMISTIA/model/miniskirt/EMISTIA_miniskirt.fbx`
+2022/4/25 v1.1.1
+* prefabの服のAnchor Target設定忘れを修正
 
-コンポーネント設定済み衣装prefab : `Assets/Takec/EMISTIA/model/miniskirt/EMISTIA_miniskirt.prefab`
+2022/4/25 v1.1.0
+* お尻のボーン構造が本体とずれていたのを修正。
+* prefabをエミスティアちゃんv1.2.1に合わせて再作成。
 
-AbatarTools( https://kurotori.booth.pm/items/1564788 )のAvatarAssemblerでのアセンブルに対応しております。
+2022/4/13 v1.0.2
+* 同梱してあるPrefabの本体のお尻のDynamicBoneを少し控えめな動きに修正。
+
+2022/4/13 v1.0.1
+* 不要なボーンを削除。
+* スカート用のコライダーを修正。
+* スカートが動きすぎないようにクロスのパラメーターを修正。
+ボーンを削除した影響で、v1.0.0のfbxを使用されていた方は表示が崩れる場合があります。
+
+2022/4/12 v1.0.0
+* 販売開始
 
 ## 利用規約 Terms of Use
 本アバターはVN3ライセンスにて公開しております。
