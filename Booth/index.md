@@ -57,5 +57,7 @@ github pages管理のBooth商品リスト
   - [rufina_bunny](rufina_bunny)
 * ユリスフィアちゃん対応
   - [yrisphere_swimsuit](yrisphere_swimsuit)
+* アバターアイテム
+  - [item_umbrella](item_umbrella)
 * ワールドギミック
   - [light-shaft-projector](light-shaft-projector)
