@@ -81,10 +81,14 @@ LightShaftProjector.unitypackageをインポートしてください。
 ##### 3.3.5.2. 手動でVizVid用にセットアップする場合
 1. `GameObject > VizVid > Video Player (Separated Controls)`を追加。
 2. `Assets/LightShaftProjector//LightShaftProjector.prefab`を`VVMW (Separated Controls)`の子として配置。
-3. `VVMW (Separated Controls)/Default Screen`は非表示に変更。<br>
+3. `VVMW (Separated Controls)/Default Screen`は非表示に変更。
+
    <img src="img/2024-03-13-04-01-28.png">
+
 4. `VVMW (Separated Controls)`のInspectorのCoreコンポーネントにて
+
    <img src="img/2024-03-13-00-31-10.png">
+
    1. `Video Screen Target 2`としてProjectionを追加
    2. `Video Screen Target 3`としてLightShaftTextureを追加。
    3. `Video Screen Target 2`および`Video Screen Target 3`のModeを`Shared Material`に変更。
@@ -95,10 +99,12 @@ LightShaftProjector.unitypackageをインポートしてください。
 1. LightShaftマテリアルのUseCameraDepthにチェックを入れて下さい。
 2. リファレンスカメラ(Main Camera)のDepthTextureModeを設定する必要があります。<br>
    VRC Scene DescriptorのReferece CameraにMain Cameraが設定されていることを確認してください。
-3. Inspectorからはそのまま設定できないため、`Assets/LightShaftProjector/Scripts/DepthTextureMode.cs`をMain Cameraにアタッチし、ModeをDepthに変更してください。
+3. Inspectorからはそのまま設定できないため、`Assets/LightShaftProjector/Scripts/DepthTextureMode.cs`をMain Cameraにアタッチし、ModeをDepthに変更してください。<br>
    <img src="img/2023-06-29-22-17-09.png">
-
-- ※_CameraDepthTextureはRealtimeなDirectionalLightが存在し、かつ影を受けるマテリアルでないと正常に動作しません。
+4. Realtimeかつシャドウタイプが影無し以外なDirectional Lightが存在することを確認。<br>
+   <img src="img/2024-06-22-01-15-15.png">
+- ※_CameraDepthTextureはRealtimeかつ影ありのDirectionalLightが存在しないと生成されません。
+- ※影を受けるマテリアルでないと`_CameraDepthTexture`に描き込まれないため正常に動作しません。
 - ※DirectionalLightのCulling Maskで対象としていないオブジェクトでも_CameraDepthTextureには反映されます。
 
 #### 3.4.2. _CameraDepthTextureを使用しない場合
@@ -136,10 +142,10 @@ _CameraDepthTextureの内容を描画するシェーダーを作成しました�
 
 `Assets/LightShaftProjector/Debug/CameraDepthTextureTestPlane.prefab`をHierarchyに配置してください。
 
-プレーンを置く前
+プレーンを置く前<br>
 <img src="img/2023-03-11-21-04-58.png">
 
-プレーンを置いた後
+プレーンを置いた後<br>
 <img src="img/2023-03-11-21-03-49.png">
 
 正常に_CameraDepthTextureが生成されていると、このように深度が表示されます。
