@@ -69,9 +69,10 @@ LightShaftProjector.unitypackageをインポートしてください。
 #### 3.3.4. AVPro Video Playerのスクリーンとして用いる場合(TopazChat Player等)
 1. `Assets/LightShaftProjector/for_AVProVideoPlayer/LightShaftProjector_AVProVideoScreen.prefab` をHierarchyに設置してください。
 
-2. `LightShaftProjector_AVProVIdeoScreen > Projector > ProjectionGimmik`内にある、`Projection > Projection`および`LightShaft > LightShaft`にアタッチされている`VRC AVPro Video Screen`のVideoPlayerに、`VRC AVPro Video Player`がアタッチされているオブジェクトを設定してください。
+2. `LightShaftProjector_AVProVIdeoScreen > Projector > ProjectionGimmik`内にある、
+   `Projection > Projection`および`LightShaft > LightShaftTexture`にアタッチされている`VRC AVPro Video Screen`のVideoPlayerに、`VRC AVPro Video Player`がアタッチされているオブジェクト(`VideoPlayer`)を設定してください。
 
-   <img src="img/2023-06-29-22-04-06.png">
+   <img src="img/2024-06-22-01-24-40.png">
 
 3. `LightShaftProjector_AVProVIdeoScreen > Projector > ProjectionGimmik`内にある、`Projection > Projection`および`LightShaft > LightShaft`のマテリアルの`Is AVPro Video`にチェックを入れてください。<br>
    AVPro Videoモードの場合、テクスチャはガンマ補正されます。設定するテクスチャの設定のsRGBのチェックを外してください。
