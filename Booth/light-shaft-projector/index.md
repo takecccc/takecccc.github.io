@@ -27,11 +27,11 @@ VizVid, iwaSync3, KineL式(りら式)VideoPlayer, AVPro Video Player(TopazChat P
 
 ## 2. 動作確認環境
 PCでのみ動作確認しています。
-* Unity2022.3.6f1
-* VRCSDK Base 3.5.1
-* VRCSDK Worlds 3.5.1
-* [VizVid v1.0.28](https://booth.pm/ja/items/5056077)
-* [iwaSync3 v3.6.0](https://booth.pm/ja/items/2666275)
+* Unity2022.3.22f1
+* VRCSDK Base 3.6.1
+* VRCSDK Worlds 3.6.1
+* [VizVid v1.0.41](https://booth.pm/ja/items/5056077)
+* [iwaSync3 v3.6.3](https://booth.pm/ja/items/2666275)
 * [Kinel式 v2.5.5](https://booth.pm/ja/items/2758684)
 * [TopazChat Player_3.3.1](https://booth.pm/ja/items/1752066)
 
@@ -162,6 +162,14 @@ https://drive.google.com/file/d/1fZ-5i4ItK_Tpkdhhth_YFttbmicsT8yC/view?usp=shari
 https://drive.google.com/file/d/1AaNaz9FnGFHD2i7_KNv_PmkcEFN4dnSU/view?usp=sharing
 
 ## 7. 更新履歴
+### 2024/6/21 v2.1.1
+* `LightShaftProjector_AVProVideoScreen.prefab`の`Use Shared Material`のチェックが外れていたので修正。
+* Directional Lightの影条件とAVPro Video Playerで使用する際の設定部のマニュアルを更新。
+* Unity 2022.3.22f1に更新。
+* VRCSDK 3.6.1での動作を確認。
+* VizVid v1.0.41での動作を確認。
+* iwaSync v3.6.3での動作を確認。
+
 ### 2024/3/13 v2.1.0
 * Unity 2022.3.6f1に更新
 * VizVid v1.0.28のサポートを追加。
