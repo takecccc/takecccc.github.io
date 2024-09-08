@@ -10,6 +10,7 @@ github pages管理のBooth商品リスト
   - [costume_cat](costume_cat)
   - [costume_chinadress](costume_chinadress)
   - [costume_dancer](costume_dancer)
+  - [costume_hot](costume_hot)
   - [costume_pilot](costume_pilot)
   - [costume_rabbit](costume_rabbit)
   - [costume_santa](costume_santa)
