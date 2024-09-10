@@ -33,6 +33,7 @@ html:
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
 <!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
 <!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
+* [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
 
 ## 導入方法
 
@@ -91,7 +92,22 @@ html:
    * `Kemono`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。 -->
 
+### ミコミアちゃん
+1. lilToon, ミコミアちゃん, Modular Avatarのパッケージを先にインポート。
+2. hot.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) ミコミアちゃんの素体prefab<br>
+   `Assets/SKYMY_Workshop/03_Avatar/MIKOMIA/Prefab/MIKOMIA_OriginalSotai2_kisekae`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hot/prefab/hot_mikomia_MA.prefab`を配置。
+5. アバターを調整
+   * `Mi_Body_Torso`のBlend Shapeの`Foot flat`を100に設定。
+   * `Underwear`と`Mi_Drawers`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2024/9/11 v1.1.0
+* ミコミアちゃんの対応を追加
+
 2024/9/8 v1.0.0
 * 販売開始
 
