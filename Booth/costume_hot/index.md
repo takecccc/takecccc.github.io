@@ -25,7 +25,7 @@ html:
 * Unity 2022.3.22f1
 * VRCSDK 3.7.0
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.15
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.16
 
 ## 対応アバター
 <!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2 -->
@@ -105,6 +105,10 @@ html:
 6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2024/9/15 v1.3.0
+* マテリアルを調整
+* おまけとしてグローブを追加
+
 2024/9/11 v1.2.0
 * 胸のサイズのシェイプキーを追加
 * メッシュを微調整
