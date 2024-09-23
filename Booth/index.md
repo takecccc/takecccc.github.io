@@ -54,6 +54,8 @@ github pages管理のBooth商品リスト
   - [limilia_swimsuit](limilia_swimsuit)
 * ソフィナちゃん対応
   - [sophina_bolero](sophina_bolero)
+* ミコミアちゃん対応
+  - [mikomia_swimsuit](mikomia_swimsuit)
 * Rufinaちゃん対応
   - [rufina_bunny](rufina_bunny)
 * ユリスフィアちゃん対応
