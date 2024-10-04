@@ -23,9 +23,9 @@ html:
 
 ## 動作確認環境
 * Unity 2022.3.22f1
-* VRCSDK 3.7.0
+* VRCSDK 3.7.1
 * [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.9.16
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.10.0
 
 ## 対応アバター
 <!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2 -->
@@ -34,6 +34,7 @@ html:
 <!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
 <!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
 * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
+* [ルナールちゃん](https://booth.pm/ja/items/5319407) v1.18
 
 ## 導入方法
 
@@ -104,7 +105,20 @@ html:
    * `Underwear`と`Mi_Drawers`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
+### ルナールちゃん
+1. lilToon, ルナールちゃん, Modular Avatarのパッケージを先にインポート。
+2. hot.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) ルナールちゃんの素体prefab<br>
+   `Assets/_Studio_7tsuki/7st01_Renard/着せ替え/7st01_Renard_Base Variant`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hot/prefab/hot_renard_MA.prefab`を配置。
+5. アバターを好みで調整
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2024/10/4 v1.4.0
+* ルナールちゃんの対応を追加。
+
 2024/9/15 v1.3.0
 * マテリアルを調整
 * おまけとしてグローブを追加
