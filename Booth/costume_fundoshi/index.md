@@ -35,6 +35,8 @@ html:
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6
 * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
 * [ルナールちゃん](https://booth.pm/ja/items/5319407) v1.18
+* [リリウムちゃん](https://booth.pm/ja/items/2745904) v1.02
+* [桔梗ちゃん](https://booth.pm/ja/items/3681787) v1.04
 
 ## 導入方法
 
@@ -118,7 +120,35 @@ html:
    * `UnderWear`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
+### リリウムちゃん
+1. lilToon, リリウムちゃん, Modular Avatarのパッケージを先にインポート。
+2. fundoshi.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) リリウムちゃんの素体prefab<br>
+   `Assets/Stray_Lamb/Lilium/Plefab/Lilium_Sotai_PB.prefab`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/fundoshi/prefab/fundoshi_lilium_MA.prefab`を配置。
+5. アバターを調整
+   * `Wear_Under`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
+   * リリウムちゃんv1.02では、プレファブにDynamicBone Colliderが残っています。VRChat SDKのValidationsにてエラーが出ている場合は、Auto FixでPhysBone Colliderに置き換えてください。
+   * ArmatureのHairに設定されているPhysBoneのCollidersの設定が抜けているので、Head(DynamicBornCollider)を設定してください。
+
+### 桔梗ちゃん
+1. lilToon, 桔梗ちゃん, Modular Avatarのパッケージを先にインポート。
+2. fundoshi.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) 桔梗ちゃんの素体prefab<br>
+   `Assets/Kikyo/Prefab/Kikyo_PB_kisekae.prefab`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/fundoshi/prefab/fundoshi_kikyo_MA.prefab`を配置。
+5. アバターを調整
+   * `Kikyo_Bra`,`Kikyo_GarterBelt`,`Kikyo_Shorts`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2024/10/5 v1.2.0
+* リリウムちゃんの対応を追加。
+* 桔梗ちゃんの対応を追加。
+
 2024/10/5 v1.1.0
 * さらしを上げるシェイプキーを追加。
 * メッシュの微調整。
