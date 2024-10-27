@@ -30,7 +30,7 @@ html:
 ## 対応アバター
 * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.4.1 -->
-<!-- * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2 -->
+* [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
 <!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
 <!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
 <!-- * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5 -->
@@ -64,7 +64,7 @@ html:
 5. アバターを調整
    * `Kneehigh`と`Underwear`を非表示にし、TagをEditorOnlyに変更。
    * `Body`のBlendShapesの`Foot_Heel`と`Leg_off`を0に設定。
-6. VRChat SDKのControlPanelからアップロード。
+6. VRChat SDKのControlPanelからアップロード。 -->
 
 ### キュリシアちゃん
 1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
@@ -74,10 +74,10 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hakama/prefab/hakama_curishia_MA.prefab`を配置。
 5. アバターを調整
-   * `Underwear`を非表示にし、TagをEditorOnlyに変更。
+   * `Body`のBlendShapesの`Shrink_Shoulder`と`Foot_flat`を100に設定。
 6. VRChat SDKのControlPanelからアップロード。
 
-### リミリアちゃん
+<!-- ### リミリアちゃん
 1. lilToon, リミリアちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -86,9 +86,9 @@ html:
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hakama/prefab/hakama_limilia_MA.prefab`を配置。
 5. アバターを調整
    * `Boots`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
+6. VRChat SDKのControlPanelからアップロード。 -->
 
-### エルキュナ2ちゃん
+<!-- ### エルキュナ2ちゃん
 1. lilToon, エルキュナ2ちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -97,9 +97,9 @@ html:
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hakama/prefab/hakama_eruqyuna2_MA.prefab`を配置。
 5. アバターを調整
    * `Underwear_er`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
+6. VRChat SDKのControlPanelからアップロード。 -->
 
-### ミコミアちゃん
+<!-- ### ミコミアちゃん
 1. lilToon, ミコミアちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -109,9 +109,9 @@ html:
 5. アバターを調整
    * `Mi_Body_Torso`のBlend Shapeの`Foot flat`を100に設定。
    * `Mi_Drawers`,`Mi_Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
+6. VRChat SDKのControlPanelからアップロード。 -->
 
-### ルナールちゃん
+<!-- ### ルナールちゃん
 1. lilToon, ルナールちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -120,9 +120,9 @@ html:
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hakama/prefab/hakama_renard_MA.prefab`を配置。
 5. アバターを調整
    * `UnderWear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
+6. VRChat SDKのControlPanelからアップロード。 -->
 
-### リリウムちゃん
+<!-- ### リリウムちゃん
 1. lilToon, リリウムちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -133,9 +133,9 @@ html:
    * `Wear_Under`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
    * リリウムちゃんv1.02では、プレファブにDynamicBone Colliderが残っています。VRChat SDKのValidationsにてエラーが出ている場合は、Auto FixでPhysBone Colliderに置き換えてください。
-   * ArmatureのHairに設定されているPhysBoneのCollidersの設定が抜けているので、Head(DynamicBornCollider)を設定してください。
+   * ArmatureのHairに設定されているPhysBoneのCollidersの設定が抜けているので、Head(DynamicBornCollider)を設定してください。 -->
 
-### 桔梗ちゃん
+<!-- ### 桔梗ちゃん
 1. lilToon, 桔梗ちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -147,8 +147,13 @@ html:
 6. VRChat SDKのControlPanelからアップロード。 -->
 
 ## 更新履歴
+2024/10/27 v1.1.0
+* メッシュとウェイトを調整。
+* 胸サイズと裾の長さのシェイプキーを追加。
+* キュリシアちゃんの対応を追加。
+
 2024/10/26 v1.0.0
-* 販売開始
+* 販売開始。
 
 ## 利用規約 Terms of Use
 本衣装はVN3ライセンスを利用した、Atelier Takec 一般衣装利用規約にて公開しております。
