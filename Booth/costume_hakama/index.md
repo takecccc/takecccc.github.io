@@ -33,7 +33,7 @@ html:
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
 * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8
 * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6
-<!-- * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5 -->
+* [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
 <!-- * [ルナールちゃん](https://booth.pm/ja/items/5319407) v1.18 -->
 <!-- * [リリウムちゃん](https://booth.pm/ja/items/2745904) v1.02 -->
 <!-- * [桔梗ちゃん](https://booth.pm/ja/items/3681787) v1.04 -->
@@ -101,7 +101,7 @@ html:
    * `Body_torso`のBlendShapesの`Foot_flat`,`Shrink_Shoulder`,`Shrink_UpperArm`,`Shrink_Elbow`を100に設定。
 6. VRChat SDKのControlPanelからアップロード。
 
-<!-- ### ミコミアちゃん
+### ミコミアちゃん
 1. lilToon, ミコミアちゃん, Modular Avatarのパッケージを先にインポート。
 2. hakama.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -109,9 +109,10 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/MIKOMIA/Prefab/MIKOMIA_OriginalSotai2_kisekae`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hakama/prefab/hakama_mikomia_MA.prefab`を配置。
 5. アバターを調整
-   * `Mi_Body_Torso`のBlend Shapeの`Foot flat`を100に設定。
-   * `Mi_Drawers`,`Mi_Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
+   * `Mi_Body_Torso`のBlend Shapeの`Foot flat`を75に設定。
+   * `Mi_Body_Torso`のBlend Shapeの`Shrink_Shoulder`,`Shrink_UpperArm`,`Shrink_Elbow`を100に設定。
+   * `Mi_Drawers`を非表示にし、TagをEditorOnlyに変更。
+6. VRChat SDKのControlPanelからアップロード。
 
 <!-- ### ルナールちゃん
 1. lilToon, ルナールちゃん, Modular Avatarのパッケージを先にインポート。
@@ -149,6 +150,10 @@ html:
 6. VRChat SDKのControlPanelからアップロード。 -->
 
 ## 更新履歴
+2024/11/15 v1.3.0
+* ミコミアちゃんの対応を追加。
+* テクスチャとマテリアルを更新
+
 2024/11/11 v1.2.0
 * エルキュナ2ちゃんとリミリアちゃんの対応を追加。
 * メッシュとウェイトを調整。
