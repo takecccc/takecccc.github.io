@@ -23,22 +23,22 @@ html:
 
 ## 動作確認環境
 * Unity 2022.3.22f1
-* VRCSDK 3.7.1
-* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.7.3
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.10.0
+* VRCSDK 3.7.3
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.8.3
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.10.8
 
 ## 対応アバター
-<!-- * [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2 -->
-<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.4.1 -->
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
-<!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
-<!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
 * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
 * [ルナールちゃん](https://booth.pm/ja/items/5319407) v1.18
+<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.4.1 -->
+<!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
+<!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
 
 ## 導入方法
 
-<!-- ### エミスティアちゃん
+### エミスティアちゃん
 1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
 2. hot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -46,10 +46,10 @@ html:
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
 4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hot/prefab/hot_emistia_MA.prefab`を配置。
 5. アバターを調整
-   * `Kemono`を非表示にし、TagをEditorOnlyに変更。
+   * `Shoes`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
 6. VRChat SDKのControlPanelからアップロード。
 
-### ユリスフィアちゃん
+<!-- ### ユリスフィアちゃん
 1. lilToon, ユリスフィアちゃん, Modular Avatarのパッケージを先にインポート。
 2. hot.unitypackageをインポート。
 3. 衣装を着せる素体をHierarchyに配置。<br>
@@ -116,6 +116,9 @@ html:
 6. VRChat SDKのControlPanelからアップロード。
 
 ## 更新履歴
+2024/11/17 v1.5.0
+* エミスティアちゃんの対応を追加。
+
 2024/10/4 v1.4.0
 * ルナールちゃんの対応を追加。
 
