@@ -32,6 +32,7 @@ html:
 * [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
 * [ミコミアちゃん](https://skymy.booth.pm/items/5967855) v2.5
 * [ルナールちゃん](https://booth.pm/ja/items/5319407) v1.18
+* [シュカちゃん](https://studio7tsuki.booth.pm/items/6227036) v1.04
 <!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.4.1 -->
 <!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8 -->
 <!-- * [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6 -->
@@ -115,7 +116,20 @@ html:
 5. アバターを好みで調整
 6. VRChat SDKのControlPanelからアップロード。
 
+### シュカちゃん
+1. lilToon, シュカちゃん, Modular Avatarのパッケージを先にインポート。
+2. hot.unitypackageをインポート。
+3. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) シュカちゃんの素体prefab<br>
+   `Assets/_Studio_7tsuki/7st02_Choucas/Custom_Prefab/_Default/7st02_Choucas MA_Base.prefab`
+4. Hierarchy上のアバター直下に`Assets/Takec/Costume/hot/prefab/hot_renard_MA.prefab`を配置。(ルナールちゃんと共通素体です。)
+5. アバターを好みで調整
+6. VRChat SDKのControlPanelからアップロード。
+
 ## 更新履歴
+2024/11/21 v1.5.2
+* シュカちゃんの説明を追加。(Webのみ更新)
+
 2024/11/18 v1.5.1
 * エミスティアちゃんのグローブを修正。
 
