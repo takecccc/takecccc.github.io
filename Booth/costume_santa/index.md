@@ -14,13 +14,6 @@ html:
 * lilToon ( https://lilxyzw.github.io/lilToon/#/ )
 * Modular Avatar ( https://modular-avatar.nadena.dev/ja/ )
 
-対応アバター
-* エルキュナ2ちゃん https://skymy.booth.pm/items/4926689
-<!-- * リミリアちゃん https://skymy.booth.pm/items/4365043 -->
-* キュリシアちゃん https://skymy.booth.pm/items/3990670
-* エミスティアちゃん https://skymy.booth.pm/items/2992265
-<!-- * ユリスフィアちゃん https://skymy.booth.pm/items/3486694 -->
-
 ## 内容物
 * 衣装Unitypackageファイル
   * fbx
@@ -29,81 +22,79 @@ html:
 * 衣装テクスチャファイル
 
 ## 動作確認環境
-* Unity 2022.3.6f1
-* VRCSDK 3.5.0
-* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.5.0
-* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.8.3
+* Unity 2022.3.22f1
+* VRCSDK 3.7.5
+* [lilToon](https://lilxyzw.github.io/lilToon/#/) v1.8.4
+* [Modular Avatar](https://modular-avatar.nadena.dev/ja/) 1.11.1
 
-### 対応アバター
-* [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.3
-<!-- * [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.5 -->
-* [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.1
-* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.1
-<!-- * [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.3.0 -->
+## 対応アバター
+* [エミスティアちゃん](https://skymy.booth.pm/items/2992265) v1.3.2
+* [ユリスフィアちゃん](https://skymy.booth.pm/items/3486694) v1.4.1
+* [キュリシアちゃん](https://skymy.booth.pm/items/3990670) v1.1.2
+* [リミリアちゃん](https://skymy.booth.pm/items/4365043) v1.0.8
+* [エルキュナ2ちゃん](https://skymy.booth.pm/items/4926689) v1.6
 
 ## 導入方法
 
-### エルキュナ2ちゃん
-1. lilToon, エルキュナ2ちゃん, Modular Avatarのパッケージを先にインポート。
+### 共通手順
+1. lilToon, Modular Avatar, 各アバターのパッケージを先にインポート。
 2. santa.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。<br>
-   ex) エルキュナ2ちゃんの素体prefab。<br>
-   `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/eruqyuna2_santa_MA.prefab`を配置。
-5. アバターを調整
-   * `Underwear_er`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
-
-<!-- ### リミリアちゃん
-1. lilToon, リミリアちゃん, Modular Avatarのパッケージを先にインポート。
-2. santa.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。<br>
-   ex) リミリアちゃんの素体prefab。<br>
-   `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/limilia_santa_MA.prefab`を配置。
-5. アバターを調整
-   * `Boots`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。 -->
-
-### キュリシアちゃん
-1. lilToon, キュリシアちゃん, Modular Avatarのパッケージを先にインポート。
-2. santa.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。<br>
-   ex) キュリシアちゃんの素体prefab。<br>
-   `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/curishia_santa_MA.prefab`を配置。
-5. アバターを調整
-   <!-- * `Armature/Hips/Hips.DB1`の`HipsDB1.L`と`HipsDB1.R`の`VRC Phys Bone`コンポーネントをオフに。 -->
-   <!-- * `Body`のBlendShapeの`Foot_flat`を100に設定。 -->
-   * `Headbang`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
-   * `Body`のBlendShapeの`Shrink_Knee`を100に設定。
-6. VRChat SDKのControlPanelからアップロード。
-
-<!-- ### ユリスフィアちゃん
-1. lilToon, ユリスフィアちゃん, Modular Avatarのパッケージを先にインポート。
-2. santa.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。<br>
-   ex) ユリスフィアちゃんの素体prefab。<br>
-   `Assets/SKYMY_Workshop/03_Avatar/YRISPHERE/Prefab/PhysBone/YRISPHERE_改変用素体_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/yrisphere_santa_MA.prefab`を配置。
-5. アバターを調整
-   * BodyのBlendShapesの`Foot_Heel`,`Leg_offf`を0に設定。
-6. VRChat SDKのControlPanelからアップロード。 -->
 
 ### エミスティアちゃん
-1. lilToon, エミスティアちゃん, Modular Avatarのパッケージを先にインポート。
-2. santa.unitypackageをインポート。
-3. 衣装を着せる素体をHierarchyに配置。<br>
+1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エミスティアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
-4. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/emistia_santa_MA.prefab`を配置。
-5. アバターを調整
-   * `Body`のBlendShapeの`foot_heel`を100に設定。
-   * `Kemono`のBlendShapeの`Tail_cover_off`を100に設定。
-   * `Necklace`,`Shoes`,`Tights`,`Underwear`を非表示にし、TagをEditorOnlyに変更。
-6. VRChat SDKのControlPanelからアップロード。
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/emistia_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで
+
+### ユリスフィアちゃん
+1. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) ユリスフィアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/YRISPHERE/Prefab/PhysBone/YRISPHERE_改変用素体_PhysBone.prefab`
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/yrisphere_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで
+
+### キュリシアちゃん
+1. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) キュリシアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/curishia_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで
+
+### リミリアちゃん
+1. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) リミリアちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/limilia_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで
+
+### エルキュナ2ちゃん
+1. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) エルキュナ2ちゃんの素体prefab。<br>
+   `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/eruqyuna2_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで
+
+<!-- ### ミコミアちゃん
+1. 衣装を着せる素体をHierarchyに配置。<br>
+   ex) ミコミアちゃんの素体prefab<br>
+   `Assets/SKYMY_Workshop/03_Avatar/MIKOMIA/Prefab/MIKOMIA_OriginalSotai2_kisekae.prefab`
+2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/mikomia_santa_MA.prefab`を配置。
+3. アバターを調整
+   * お好みで -->
 
 ## 更新履歴
+2024/12/20 v1.2.0
+* ユリスフィアちゃんの対応を追加。
+* PBを共通化。
+* アニメーション・メニューをModular Avatarの機能を使う形に変更。
+* デフォルトでShrink等のシェイプキーを適用してしまうと、タイツを脱ぐ等した場合にShrinkされたままとなってしまうのでご注意ください。
+
 2023/12/13 v1.1.0
 * 胸のシェイプキーを修整
 * エルキュナ2ちゃん、エミスティアちゃんの対応を追加。
