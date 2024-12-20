@@ -45,50 +45,42 @@ html:
    ex) エミスティアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/EMISTIA/Prefab/EMISTIA_改変用Prefab_PhysBone.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/emistia_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで
 
 ### ユリスフィアちゃん
 1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) ユリスフィアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/YRISPHERE/Prefab/PhysBone/YRISPHERE_改変用素体_PhysBone.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/yrisphere_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで
 
 ### キュリシアちゃん
 1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) キュリシアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/CURISHIA/Prefab/CURISHIA_改変用素体.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/curishia_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで
 
 ### リミリアちゃん
 1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) リミリアちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/LIMILIA/Prefab/LIMILIA_改変用Prefab.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/limilia_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで
 
 ### エルキュナ2ちゃん
 1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) エルキュナ2ちゃんの素体prefab。<br>
    `Assets/SKYMY_Workshop/03_Avatar/ERUQYUNA2/Prefab/ERUQYUNA2_素体Variant.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/eruqyuna2_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで
 
-<!-- ### ミコミアちゃん
+### ミコミアちゃん
 1. 衣装を着せる素体をHierarchyに配置。<br>
    ex) ミコミアちゃんの素体prefab<br>
    `Assets/SKYMY_Workshop/03_Avatar/MIKOMIA/Prefab/MIKOMIA_OriginalSotai2_kisekae.prefab`
 2. Hierarchy上のアバター直下に`Assets/Takec/Costume/santa/prefab/mikomia_santa_MA.prefab`を配置。
-3. アバターを調整
-   * お好みで -->
 
 ## 更新履歴
+2024/12/21 v1.3.0
+* ミコミアちゃんの対応を追加。
+
+
 2024/12/20 v1.2.0
 * ユリスフィアちゃんの対応を追加。
 * PBを共通化。
